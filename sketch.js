@@ -11,7 +11,7 @@ var interpolateShortest = true;
 
 
 function setup() {
-  canvas = createCanvas(windowWidth, 100);
+  canvas = createCanvas(windowWidth, document.body.clientHeight);
   canvas.position(0, 0);
   canvas.style('z-index', '-1');
   colorMode(HSB);
