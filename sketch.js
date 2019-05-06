@@ -4,12 +4,15 @@ var tileCountY = 10;
 var colorsLeft = [];
 var colorsRight = [];
 var colors = [];
+var canvas;
+
 
 var interpolateShortest = true;
 
 
 function setup() {
   canvas = createCanvas(windowWidth, windowHeight);
+  canvas.position(0, 0);
   canvas.style('z-index', '-1');
   colorMode(HSB);
   noStroke();
@@ -24,7 +27,7 @@ function draw() {
   var interCol;
   colors = [];
 
-  for (var gridY = 0; gridY < 1; gridY++){
+  for (var gridY = 0; gridY < tileCountY; gridY++){
     var col1 = colorsLeft[gridY];
     var col2 = colorsRight[gridY];
 
