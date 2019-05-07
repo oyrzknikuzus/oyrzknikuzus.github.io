@@ -13,7 +13,7 @@ var interpolateShortest = true;
 function setup() {
   canvas = createCanvas(windowWidth, 2000);
   canvas.position(0, 0);
-  canvas.style('z-index', '-1');
+  canvas.style('z-index', '-2');
   colorMode(HSB);
   noStroke();
   shakeColors();
