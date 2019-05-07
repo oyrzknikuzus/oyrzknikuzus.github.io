@@ -37,8 +37,9 @@ function draw() {
       if (interpolateShortest){
         colorMode(RGB);
         interCol = lerpColor(col1, col2, amount);
-      }else{
+
         colorMode(HSB);
+      }else{
         interCol = lerpColor(col1, col2, amount);
       }
 
