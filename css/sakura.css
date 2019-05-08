@@ -10,9 +10,9 @@ html {
   font-family: serif; }
 
 body {
-  font-size: 1.8rem;
+  font-size: 2.4rem;
   line-height: 1.618;
-  max-width: 38em;   
+  max-width: 38em;
   margin: auto;
   color: #4a4a4a;
   background-color: #f9f9f9;
@@ -166,4 +166,3 @@ label, legend, fieldset {
   display: block;
   margin-bottom: .5rem;
   font-weight: 600; }
-

@@ -8,7 +8,7 @@ function setup() {
 }
 
 function draw() {
-  x = 300;
+  x = 200;
   y = 150;
   r = 180;
   fill(255, 10);
