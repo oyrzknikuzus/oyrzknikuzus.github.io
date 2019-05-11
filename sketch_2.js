@@ -1,25 +1,26 @@
-var canvas;
+var sketch2 = function(p) {
+  p.setup = function() {
 
-function setup() {
-  canvas = createCanvas(windowWidth, windowHeight);
-  canvas.position(0, 0);
-  canvas.style('z-index', '-1');
-  background(255);
-}
+    canvas = p.createCanvas(p.windowWidth, p.windowHeight);
+    canvas.position(0, 0);
+    canvas.style('z-index', '-1');
+  };
 
-function draw() {
-  x = width / 2;
-  y = 150;
-  r = 180;
-  fill(255, 10);
-  noStroke();
-  x = x + random(-5, 5);
-  y = y + random(-5, 5);
-  i = 0;
-  while(i < 10){
-    noFill();
-    stroke(random(255), random(255), 255);
-    ellipse(x + random(-10, 10), y + random(-10, 10), r, r);
-    i = i + 1;
-  }
-}
+  p.draw = function() {
+    x = p.width / 2;
+    y = 150;
+    r = 180;
+    p.fill(255, 10);
+    p.noStroke();
+    x = x + p.random(-5, 5);
+    y = y + p.random(-5, 5);
+    i = 0;
+    while(i < 10){
+      p.noFill();
+      p.stroke(p.random(255), p.random(255), 255);
+      p.ellipse(x + p.random(-10, 10), y + p.random(-10, 10), r, r);
+      i = i + 1;
+    }
+  };
+};
+new p5(sketch2, "random_circle");
