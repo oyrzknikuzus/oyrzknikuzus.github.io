@@ -1,11 +1,11 @@
 /* Set gradient here */
-body {  
-     background: linear-gradient(-90deg, purple, yellow); 
+body {
+     background: linear-gradient(-90deg, purple, yellow);
     /* background: linear-gradient(-90deg, black, pink, green ); */
     /* background: linear-gradient(-90deg, yellow, orange, red, green, blue);*/
 }
 
-canvas { 
+canvas {
     display:block; /* remove scrollbars */
     position: absolute;  /* position at top left corner for overlay */
     left: 0;
@@ -19,7 +19,7 @@ h1 {
 
 h2 {
     color: #111;
-    font-family: 'Open Sans',sans-serif; 
+    font-family: 'Open Sans',sans-serif;
 }
 
 p {
