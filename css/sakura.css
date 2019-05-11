@@ -166,8 +166,3 @@ label, legend, fieldset {
   display: block;
   margin-bottom: .5rem;
   font-weight: 600; }
-
-
-@media screen and (max-width: 480px) {
-a { font-size : 40px ; }
-}
