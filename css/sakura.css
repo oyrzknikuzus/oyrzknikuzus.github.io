@@ -169,5 +169,5 @@ label, legend, fieldset {
 
 
 @media screen and (max-width: 480px) {
-p { font-size : 40px ; }
+a { font-size : 40px ; }
 }
