@@ -26,14 +26,14 @@ var sketch1 = function(p) {
         var posY = p.height / tileCountY * gridY;
 
         var toggle = p.int(p.random(0, 2));
+        p.strokeWeight(gridY / 10);
 
         if (toggle == 0) {
-          p.strokeWeight(1);
+
           p.line(posX, posY, posX + p.width / tileCount, posY + p.height / tileCountY);
         }
 
         if (toggle == 1) {
-          p.strokeWeight(1);
           p.line(posX, posY + p.height / tileCountY, posX + p.width / tileCount, posY);
         }
       }
