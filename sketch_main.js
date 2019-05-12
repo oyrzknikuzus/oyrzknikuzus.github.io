@@ -53,12 +53,12 @@ var sketch2 = function(p) {
     p.noStroke();
     x = x + p.random(-5, 5);
     y = y + p.random(-5, 5);
-    i = 0;
-    while(i < 10){
+
+    for (i = 0; i < 10; i++ ){
       p.noFill();
       p.stroke(p.random(255), p.random(255), 255);
       p.ellipse(x + p.random(-10, 10), y + p.random(-10, 10), r, r);
-      i = i + 1;
+
     }
   };
 };
