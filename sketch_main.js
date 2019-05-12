@@ -4,7 +4,7 @@ var sketch1 = function(p) {
   var actStrokeCap;
 
   p.setup = function() {
-    canvas = p.createCanvas(p.windowWidth, p.windowWidth * 2);
+    canvas = p.createCanvas(p.windowWidth, p.windowWidth * 0.5);
     canvas.position(0, 400);
     canvas.style('z-index', '-1');
   };
