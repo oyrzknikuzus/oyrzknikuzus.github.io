@@ -4,13 +4,13 @@ var sketch1 = function(p) {
   var actStrokeCap;
 
   p.setup = function() {
-    canvas = p.createCanvas(p.windowWidth, p.windowWidth * 5);
+    canvas = p.createCanvas(p.windowWidth, p.windowWidth * 2);
     canvas.position(0, 800);
     canvas.style('z-index', '-1');
   };
 
   p.draw = function() {
-    p.frameRate(3);
+    p.frameRate(2);
     p.noCursor();
     p.clear();
     p.strokeCap(actStrokeCap);
@@ -26,7 +26,8 @@ var sketch1 = function(p) {
         var posY = p.height / tileCountY * gridY;
 
         var toggle = p.int(p.random(0, 2));
-        p.strokeWeight(gridY / 10);
+        p.strokeWeight((gridY / 8) ** 2);
+        p.stroke('#b0c4de');
 
         if (toggle == 0) {
 
