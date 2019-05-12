@@ -106,7 +106,7 @@ a {
 	.sketch {
 		display: inline-flex;
 		flex-direction: column;
-		background-color: #EFFAEE;
+		background-color: #e6e6fa;
 		flex-basis: calc(50% - 1em);
 		padding: 1em 1em 0 1em;
 		margin-bottom: 1em;
@@ -131,7 +131,7 @@ a {
 	}
 
 	h3 {
-		background-color: #6BE582;
+		background-color: #778899;
 		color: #fff;
 		margin-top: 0;
 		padding: 0 1em;

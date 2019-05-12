@@ -42,8 +42,8 @@ var sketch2 = function(p) {
   p.setup = function() {
     canvas = p.createCanvas(p.windowWidth / 4, p.windowWidth / 4);
     canvas.position(p.windowWidth * 0.75, -30);
-    canvas.style('z-index', '-1');
-    //p.background(0);
+    //canvas.style('z-index', '-1');
+    //p.background(255);
   };
 
   p.draw = function() {
