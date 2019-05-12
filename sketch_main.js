@@ -39,8 +39,8 @@ var sketch1 = function(p) {
 
 var sketch2 = function(p) {
   p.setup = function() {
-    canvas = p.createCanvas(p.windowWidth, 600);
-    canvas.position(0, 0);
+    canvas = p.createCanvas(500, 500);
+    canvas.position(p.windowWidth * 0.7, 0);
     canvas.style('z-index', '-1');
   };
 
