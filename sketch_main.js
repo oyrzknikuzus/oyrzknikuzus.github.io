@@ -4,33 +4,37 @@ var sketch1 = function(p) {
   var actStrokeCap;
 
   p.setup = function() {
-    canvas = p.createCanvas(p.windowWidth, 800);
+    canvas = p.createCanvas(p.windowWidth, p.windowWidth * 5);
     canvas.position(0, 800);
     canvas.style('z-index', '-1');
   };
 
   p.draw = function() {
+    p.frameRate(3);
     p.noCursor();
     p.clear();
     p.strokeCap(actStrokeCap);
     //p.randomSeed(actRandomSeed);
 
-    for (var gridY = 0; gridY <= tileCount; gridY++) {
+    var tileCountY = tileCount * p.height / p.width
+
+    for (var gridY = 0; gridY <= tileCountY; gridY++) {
       for (var gridX = 0; gridX <= tileCount; gridX++) {
 
+
         var posX = p.width / tileCount * gridX;
-        var posY = p.height / tileCount * gridY;
+        var posY = p.height / tileCountY * gridY;
 
         var toggle = p.int(p.random(0, 2));
 
         if (toggle == 0) {
           p.strokeWeight(1);
-          p.line(posX, posY, posX + p.width / tileCount, posY + p.height / tileCount);
+          p.line(posX, posY, posX + p.width / tileCount, posY + p.height / tileCountY);
         }
 
         if (toggle == 1) {
           p.strokeWeight(1);
-          p.line(posX, posY + p.height / tileCount, posX + p.width / tileCount, posY);
+          p.line(posX, posY + p.height / tileCountY, posX + p.width / tileCount, posY);
         }
       }
     }
