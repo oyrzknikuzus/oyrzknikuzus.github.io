@@ -4,7 +4,7 @@ var sketch1 = function(p) {
   var actStrokeCap;
 
   p.setup = function() {
-    canvas = p.createCanvas(p.windowWidth, p.windowWidth);
+    canvas = p.createCanvas(p.windowWidth, 800);
     canvas.position(0, 800);
     canvas.style('z-index', '-1');
   };
@@ -13,7 +13,6 @@ var sketch1 = function(p) {
     p.noCursor();
     p.clear();
     p.strokeCap(actStrokeCap);
-    p.randomSeed(actRandomSeed);
 
     for (var gridY = 0; gridY <= tileCount; gridY++) {
       for (var gridX = 0; gridX <= tileCount; gridX++) {
@@ -24,12 +23,12 @@ var sketch1 = function(p) {
         var toggle = p.int(p.random(0, 2));
 
         if (toggle == 0) {
-          p.strokeWeight(p.mouseX / 20);
+          p.strokeWeight(1);
           p.line(posX, posY, posX + p.width / tileCount, posY + p.height / tileCount);
         }
 
         if (toggle == 1) {
-          p.strokeWeight(p.mouseY / 20);
+          p.strokeWeight(1);
           p.line(posX, posY + p.height / tileCount, posX + p.width / tileCount, posY);
         }
       }
