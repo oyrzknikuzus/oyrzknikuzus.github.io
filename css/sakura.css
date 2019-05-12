@@ -19,7 +19,8 @@ body {
 
 div#random_circle{
     position: fixed;
-    z-index: 10}       /* random_circleの固定 */
+    z-index: 10;
+    }       /* random_circleの固定 */
 
 @media (max-width: 684px) {
   body {
