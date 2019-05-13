@@ -11,7 +11,7 @@ var sketch1 = function(p) {
 
   p.draw = function() {
     p.noLoop()
-    p.frameRate(2);
+    p.frameRate(1);
     p.noCursor();
     p.clear();
     p.strokeCap(actStrokeCap);
