@@ -7,6 +7,7 @@ var sketch1 = function(p) {
     canvas = p.createCanvas(p.windowWidth, p.windowWidth * 4);
     canvas.position(0, 200);
     canvas.style('z-index', '-1');
+    
   };
 
   p.draw = function() {

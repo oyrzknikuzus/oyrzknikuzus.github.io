@@ -13,6 +13,7 @@ section {
   max-width: 1228px;
   margin: 0 auto;
   overflow: hidden;
+
 }
 
 nav {
@@ -106,7 +107,7 @@ a {
 	.sketch {
 		display: inline-flex;
 		flex-direction: column;
-		background-color: #e6e6fa;
+		background-color: #000000;
 		flex-basis: calc(50% - 1em);
 		padding: 1em 1em 0 1em;
 		margin-bottom: 1em;
