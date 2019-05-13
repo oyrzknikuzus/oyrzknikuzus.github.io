@@ -107,7 +107,7 @@ a {
 	.sketch {
 		display: inline-flex;
 		flex-direction: column;
-		background-color: #000000;
+		background-color: #222222;
 		flex-basis: calc(50% - 1em);
 		padding: 1em 1em 0 1em;
 		margin-bottom: 1em;
@@ -132,7 +132,7 @@ a {
 	}
 
 	h3 {
-		background-color: #778899;
+		background-color: #555544;
 		color: #fff;
 		margin-top: 0;
 		padding: 0 1em;
@@ -156,6 +156,7 @@ a {
 		content: url('arrow.svg');
 		width: 2em;
 		margin-right: 0.5em;
+
 	}
 
 }

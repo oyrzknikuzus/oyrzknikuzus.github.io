@@ -7,7 +7,7 @@ var sketch1 = function(p) {
     canvas = p.createCanvas(p.windowWidth, p.windowWidth * 4);
     canvas.position(0, 200);
     canvas.style('z-index', '-1');
-    
+
   };
 
   p.draw = function() {
@@ -29,7 +29,7 @@ var sketch1 = function(p) {
 
         var toggle = p.int(p.random(0, 2));
         p.strokeWeight((gridY / 8) ** 2);
-        p.stroke('#696969');
+        p.stroke('#AAAAAA');
 
         if (toggle == 0) {
 
