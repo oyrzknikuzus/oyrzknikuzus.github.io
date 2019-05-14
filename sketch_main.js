@@ -51,9 +51,11 @@ var sketch2 = function(p) {
     canvas.position(p.windowWidth * 0.75, -30);
     //canvas.style('z-index', '-1');
     //p.background(255);
+    //p.noLoop();
   };
 
   p.draw = function() {
+    //p.redraw(60);
     p.frameRate(60);
     x = p.width / 2;
     y = p.height / 2;
@@ -70,6 +72,8 @@ var sketch2 = function(p) {
 
     }
   };
+
+
 };
 
 new p5(sketch1, "random_background");

@@ -23,6 +23,27 @@ div#random_circle{
     z-index: 10;
     }       /* random_circleの固定 */
 
+h1#title{
+    /*padding-top: 800px;*/
+    position: fixed;
+    z-index: 11;
+    }
+
+.fade_off {
+    opacity: 0;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -ms-transition: all 1s;
+    transition: all 1s;
+}
+
+.fade_on {
+    opacity: 1;
+}
+
+
+
 @media (max-width: 684px) {
   body {
     font-size: 1.53rem; } }
