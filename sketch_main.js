@@ -56,7 +56,7 @@ var sketch2 = function(p) {
 
   p.draw = function() {
     //p.redraw(60);
-    p.frameRate(60);
+    p.frameRate(30);
     x = p.width / 2;
     y = p.height / 2;
     r = p.height * 0.5;
@@ -65,7 +65,7 @@ var sketch2 = function(p) {
     x = x + p.random(-5, 5);
     y = y + p.random(-5, 5);
 
-    for (i = 0; i < 10; i++ ){
+    for (i = 0; i < 1; i++ ){
       p.noFill();
       p.stroke(p.random(255), p.random(255), 255);
       p.ellipse(x + p.random(-10, 10), y + p.random(-10, 10), r, r);
