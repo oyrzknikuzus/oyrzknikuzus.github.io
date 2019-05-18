@@ -4,7 +4,7 @@ $(function(){
       var imgPos = $(this).offset().top;
       var scroll = $(window).scrollTop();
       var windowHeight = $(window).height();
-      if (scroll > imgPos - windowHeight + windowHeight/4){
+      if (scroll > imgPos - windowHeight){
         $(this).addClass("scrollin");
       } else {
         $(this).removeClass("fade_on");
