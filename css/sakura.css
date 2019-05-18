@@ -30,16 +30,12 @@ h1#title{
     }
 
 .fade_off {
-
-    opacity: 0;
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -o-transition: all 1s;
-    -ms-transition: all 1s;
-    transition: all 1s;
+  opacity : 0;
+  transform : translate(0, 900px);
+  transition:all 0.5s;
 }
 
-.fade_on {
+.fade_off.scrollin {
 
     opacity: 1;
 }

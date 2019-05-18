@@ -1,11 +1,11 @@
 $(function(){
   $(window).scroll(function (){
-    $("#title").each(function(){
+    $(".fade_off").each(function(){
       var imgPos = $(this).offset().top;
       var scroll = $(window).scrollTop();
       var windowHeight = $(window).height();
-      if (scroll > imgPos - windowHeight + windowHeight/5){
-        $(this).addClass("fade_on");
+      if (scroll > imgPos - windowHeight + 100){
+        $(this).addClass("scrollin");
       } else {
         $(this).removeClass("fade_on");
       }
