@@ -22,7 +22,7 @@ $(function(){
       var imgPos = $(this).offset().top;
       var scroll = $(window).scrollTop();
       var windowHeight = $(window).height();
-      if (scroll > imgPos - windowHeight + 2200){
+      if (scroll > imgPos - windowHeight + 2400){
         $(this).addClass("scrollin");
       } else {
         $(this).removeClass("fade_on");
@@ -37,7 +37,7 @@ $(function(){
       var imgPos = $(this).offset().top;
       var scroll = $(window).scrollTop();
       var windowHeight = $(window).height();
-      if (scroll > imgPos - windowHeight + 2600){
+      if (scroll > imgPos - windowHeight + 2800){
         $(this).addClass("scrollin");
       } else {
         $(this).removeClass("fade_on");

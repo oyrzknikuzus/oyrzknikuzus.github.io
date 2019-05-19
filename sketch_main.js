@@ -102,7 +102,7 @@ var sketch3 = function(p) {
     p.stroke(0);
     p.strokeWeight(0);
     for (i = 0; i < 10; i++){
-      p.text(sourceText.substring(i, i + 1), 100 + (20 * i) + p.random(-5, 5), 120);
+      p.text(sourceText.substring(i, i + 1), 80 + (20 * i) + p.random(-5, 5), 120);
       p.fill(p.random(255), p.random(255), 255);
     }
   };
