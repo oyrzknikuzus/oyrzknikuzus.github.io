@@ -59,7 +59,7 @@ var sketch2 = function(p) {
     //p.redraw(60);
     p.frameRate(30);
     x = p.width * 0.875;
-    y = p.height / 7;
+    y = p.height / 6;
     r = p.width / 10;
     p.fill(255, 10);
     p.noStroke();
@@ -102,7 +102,7 @@ var sketch3 = function(p) {
     p.stroke(0);
     p.strokeWeight(0);
     for (i = 0; i < 10; i++){
-      p.text(sourceText.substring(i, i + 1), (20 * i) + p.random(0, 5), 100);
+      p.text(sourceText.substring(i, i + 1), (20 * i) + p.random(0, 5), 80);
       p.fill(p.random(255), p.random(255), 255);
     }
   };
