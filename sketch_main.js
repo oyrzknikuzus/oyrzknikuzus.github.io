@@ -52,6 +52,7 @@ var sketch2 = function(p) {
     //canvas.style('z-index', '-1');
     //p.background(255);
     //p.noLoop();
+    p.randomSeed(0);
   };
 
   p.draw = function() {
@@ -65,7 +66,7 @@ var sketch2 = function(p) {
     x = x + p.random(-5, 5);
     y = y + p.random(-5, 5);
 
-    for (i = 0; i < 1; i++ ){
+    for (i = 0; i < 2; i++ ){
       p.noFill();
       p.stroke(p.random(255), p.random(255), 255);
       p.ellipse(x + p.random(-10, 10), y + p.random(-10, 10), r, r);
@@ -76,5 +77,37 @@ var sketch2 = function(p) {
 
 };
 
+
+
+var sketch3 = function(p) {
+  const sourceText = "randomness";
+
+  p.setup = function() {
+    canvas = p.createCanvas(p.windowWidth / 4, p.windowWidth / 4);
+    canvas.position(0, 0);
+    //canvas.style('z-index', '-1');
+    //p.background(255);
+    //p.noLoop();
+    p.randomSeed(0);
+  };
+
+  p.redraw = function() {
+    //p.background(0);
+    p.frameRate(10);
+    //文字の大きさ
+    p.textSize(24);
+    //フォント
+    p.textFont('Helvetica Neue');
+    //p.textAlign(CENTER);
+    p.stroke(0);
+    p.strokeWeight(2);
+    for (i = 0; i < 10; i++){
+      p.text(sourceText.substring(i, i + 1), p.width / 4 + (i + 1) * p.random(15, 20), 120);
+      p.fill(p.random(255), p.random(255), 255);
+    }
+  };
+};
+
 new p5(sketch1, "random_background");
 new p5(sketch2, "random_circle");
+new p5(sketch3, "random_randomness");
