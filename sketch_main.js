@@ -59,7 +59,7 @@ var sketch2 = function(p) {
     //p.redraw(60);
     p.frameRate(30);
     x = p.width / 2;
-    y = p.height / 2;
+    y = p.height / 4;
     r = p.width / 8;
     p.fill(255, 10);
     p.noStroke();
