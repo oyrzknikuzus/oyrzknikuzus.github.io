@@ -100,7 +100,7 @@ var sketch3 = function(p) {
     p.textFont('Helvetica Neue');
     //p.textAlign(CENTER);
     p.stroke(0);
-    p.strokeWeight(2);
+    p.strokeWeight(0.5);
     for (i = 0; i < 10; i++){
       p.text(sourceText.substring(i, i + 1), p.width / 4 + (i + 1) * p.random(15, 20), 120);
       p.fill(p.random(255), p.random(255), 255);

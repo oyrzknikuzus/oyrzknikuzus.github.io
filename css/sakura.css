@@ -33,7 +33,7 @@ div#random_randomness{
 
 .fade_off {
   opacity : 0;
-  transform : translate(0, 1500px);
+  transform : translate(0, 0);
   transition:all 0.5s;
 }
 
