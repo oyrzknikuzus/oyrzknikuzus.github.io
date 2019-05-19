@@ -19,16 +19,20 @@ body {
   padding: 13px; }
 
 div#random_circle{
-    position: fixed;
-    z-index: 10;
-    }
+  position: fixed;
+  z-index: 10;
+}
 
 div#random_randomness{
-    position: fixed;
-    z-index: 15;
+  position: fixed;
+  z-index: 15;
+}
+
+.menu-bar{;
+  height: 300px;
+  background: #AAAAAA
+
   }
-
-
 
 
 .fade_off1 {
@@ -55,6 +59,23 @@ div#random_randomness{
   transform : translate(0, 0);
   position: fixed;
   z-index: 15;
+}
+
+
+.fade_off3 {
+  opacity : 0;
+  transform : translate(0, 50px);
+  transition:all 0.5s;
+}
+
+.fade_off3.scrollin {
+  width: 100%;
+
+  opacity : 1;
+  transform : translate(0, 0);
+  position: fixed;
+  z-index: 9;
+
 }
 
 
