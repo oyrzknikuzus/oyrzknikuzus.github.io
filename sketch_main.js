@@ -28,7 +28,7 @@ var sketch1 = function(p) {
         var posY = p.height / tileCountY * gridY;
 
         var toggle = p.int(p.random(0, 2));
-        p.strokeWeight(1 / 2);
+        p.strokeWeight(1);
         p.stroke('#AAAAAA');
 
         if (toggle == 0) {
