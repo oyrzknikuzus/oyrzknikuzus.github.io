@@ -95,7 +95,7 @@ var sketch3 = function(p) {
     //p.background(0);
     p.frameRate(7);
     //文字の大きさ
-    p.textSize(28);
+    p.textSize(32);
     //フォント
     p.textFont('Helvetica Neue');
     //textAlign(RIGHT);
