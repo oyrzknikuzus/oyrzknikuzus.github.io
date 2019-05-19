@@ -93,16 +93,16 @@ var sketch3 = function(p) {
 
   p.draw = function() {
     //p.background(0);
-    p.frameRate(5);
+    p.frameRate(7);
     //文字の大きさ
     p.textSize(28);
     //フォント
     p.textFont('Helvetica Neue');
     //textAlign(RIGHT);
     p.stroke(0);
-    p.strokeWeight(1);
+    p.strokeWeight(0.5);
     for (i = 0; i < 10; i++){
-      p.text(sourceText.substring(i, i + 1), p.width / 4 + (25 * i) + p.random(-5, 5), 120);
+      p.text(sourceText.substring(i, i + 1), p.width / 4 + (20 * i) + p.random(-5, 5), 120);
       p.fill(p.random(255), p.random(255), 255);
     }
   };
