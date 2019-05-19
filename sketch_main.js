@@ -50,7 +50,7 @@ var sketch2 = function(p) {
     canvas = p.createCanvas(p.windowWidth, p.windowWidth / 2);
     canvas.position(0, 0);
     //canvas.style('z-index', '-1');
-    p.background(0);
+    //p.background(0);
     //p.noLoop();
     p.randomSeed(0);
   };
