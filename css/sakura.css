@@ -32,8 +32,10 @@ div#random_randomness{
 }
 
 .menu-bar{
-  height: 200px;
-  background: #AAAAAA
+  height: 250px;
+  background: #AAAAAA;
+  margin-right: -100px;
+
 
   }
 
@@ -77,6 +79,7 @@ div#random_randomness{
   transform : translate(0, 0);
   position: fixed;
   z-index: 9;
+  margin-left: -100px;
 
 }
 
