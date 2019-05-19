@@ -93,7 +93,7 @@ var sketch3 = function(p) {
 
   p.draw = function() {
     //p.background(0);
-    p.frameRate(7);
+    p.frameRate(10);
     //文字の大きさ
     p.textSize(32);
     //フォント
