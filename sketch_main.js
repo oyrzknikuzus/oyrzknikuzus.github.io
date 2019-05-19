@@ -59,7 +59,7 @@ var sketch2 = function(p) {
     //p.redraw(60);
     p.frameRate(30);
     x = p.width * 0.875;
-    y = p.height / 4;
+    y = p.height / 5;
     r = p.width / 8;
     p.fill(255, 10);
     p.noStroke();
@@ -83,7 +83,7 @@ var sketch3 = function(p) {
   const sourceText = "randomness";
 
   p.setup = function() {
-    canvas = p.createCanvas(p.windowWidth / 2, p.windowWidth / 2);
+    canvas = p.createCanvas(p.windowWidth, p.windowWidth / 2);
     canvas.position(0, 0);
     //canvas.style('z-index', '-1');
     //p.background(0);
@@ -102,7 +102,7 @@ var sketch3 = function(p) {
     p.stroke(0);
     p.strokeWeight(0);
     for (i = 0; i < 10; i++){
-      p.text(sourceText.substring(i, i + 1), (20 * i) + p.random(0, 5), 120);
+      p.text(sourceText.substring(i, i + 1), (20 * i) + p.random(0, 5), p.windowHeight / 5);
       p.fill(p.random(255), p.random(255), 255);
     }
   };
