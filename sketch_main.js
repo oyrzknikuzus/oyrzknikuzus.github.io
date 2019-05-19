@@ -95,14 +95,14 @@ var sketch3 = function(p) {
     //p.background(0);
     p.frameRate(10);
     //文字の大きさ
-    p.textSize(24);
+    p.textSize(28);
     //フォント
     p.textFont('Helvetica Neue');
     //p.textAlign(CENTER);
     p.stroke(0);
     p.strokeWeight(0.5);
     for (i = 0; i < 10; i++){
-      p.text(sourceText.substring(i, i + 1), p.width / 4 + (i + 1) * p.random(15, 20), 120);
+      p.text(sourceText.substring(i, i + 1), p.width / 3 + (i + 1) * p.random(20, 25), 120);
       p.fill(p.random(255), p.random(255), 255);
     }
   };
