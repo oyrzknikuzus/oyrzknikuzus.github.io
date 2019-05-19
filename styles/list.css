@@ -11,7 +11,7 @@ body {
 section {
 	padding-top: 2800px;
   max-width: 1000px;
-  margin: 0 auto;
+  margin: auto;
   overflow: hidden;
 
 }
@@ -95,7 +95,7 @@ a {
 
 	section {
 	  max-width: 1000px;
-	  margin: 0 auto;
+	  margin: auto;
 	  overflow: hidden;
 	}
 
