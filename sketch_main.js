@@ -59,8 +59,8 @@ var sketch2 = function(p) {
     //p.redraw(60);
     p.frameRate(30);
     x = p.width * 0.875;
-    y = p.height / 5;
-    r = p.width / 8;
+    y = p.height / 8;
+    r = p.width / 12;
     p.fill(255, 10);
     p.noStroke();
     x = x + p.random(-5, 5);
@@ -102,7 +102,7 @@ var sketch3 = function(p) {
     p.stroke(0);
     p.strokeWeight(0);
     for (i = 0; i < 10; i++){
-      p.text(sourceText.substring(i, i + 1), (20 * i) + p.random(0, 5), p.windowHeight / 5);
+      p.text(sourceText.substring(i, i + 1), (20 * i) + p.random(0, 5), p.windowHeight / 8);
       p.fill(p.random(255), p.random(255), 255);
     }
   };

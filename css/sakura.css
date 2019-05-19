@@ -46,7 +46,7 @@ div#random_randomness{
 
 .fade_off1.scrollin {
   opacity : 1;
-  transform : translate(0, 20);
+  transform : translate(0, 0);
   position: fixed;
   z-index: 11;
 }
@@ -59,7 +59,7 @@ div#random_randomness{
 
 .fade_off2.scrollin {
   opacity : 1;
-  transform : translate(0, 0);
+  transform : translate(0, 20px);
   position: fixed;
   z-index: 15;
 }
