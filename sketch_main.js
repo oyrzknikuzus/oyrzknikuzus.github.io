@@ -60,7 +60,7 @@ var sketch2 = function(p) {
     p.frameRate(30);
     x = p.width / 2;
     y = p.height / 2;
-    r = p.width / 8;
+    r = p.width / 4;
     p.fill(255, 10);
     p.noStroke();
     x = x + p.random(-5, 5);
