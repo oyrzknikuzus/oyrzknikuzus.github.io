@@ -91,21 +91,24 @@ var sketch3 = function(p) {
     p.randomSeed(0);
   };
 
-  p.redraw = function() {
+  p.draw = function() {
     //p.background(0);
-    p.frameRate(10);
+    p.frameRate(5);
     //文字の大きさ
     p.textSize(28);
     //フォント
     p.textFont('Helvetica Neue');
-    //p.textAlign(CENTER);
+    //textAlign(RIGHT);
     p.stroke(0);
-    p.strokeWeight(0.5);
+    p.strokeWeight(1);
     for (i = 0; i < 10; i++){
-      p.text(sourceText.substring(i, i + 1), p.width / 3 + (i + 1) * p.random(20, 30), 120);
+      p.text(sourceText.substring(i, i + 1), p.width / 3 + (20 * i) + p.random(-5, 5), 120);
       p.fill(p.random(255), p.random(255), 255);
     }
   };
+
+
+
 };
 
 new p5(sketch1, "random_background");
