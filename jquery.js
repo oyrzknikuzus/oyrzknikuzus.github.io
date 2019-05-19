@@ -5,7 +5,7 @@ $(function(){
       var imgPos = $(this).offset().top;
       var scroll = $(window).scrollTop();
       var windowHeight = $(window).height();
-      if (scroll > imgPos - windowHeight + 800){
+      if (scroll > imgPos - windowHeight + 1000){
         $(this).addClass("scrollin");
       } else {
         $(this).removeClass("fade_on");
@@ -22,7 +22,7 @@ $(function(){
       var imgPos = $(this).offset().top;
       var scroll = $(window).scrollTop();
       var windowHeight = $(window).height();
-      if (scroll > imgPos - windowHeight + 2400){
+      if (scroll > imgPos - windowHeight + 2200){
         $(this).addClass("scrollin");
       } else {
         $(this).removeClass("fade_on");
@@ -37,7 +37,7 @@ $(function(){
       var imgPos = $(this).offset().top;
       var scroll = $(window).scrollTop();
       var windowHeight = $(window).height();
-      if (scroll > imgPos - windowHeight + 2800){
+      if (scroll > imgPos - windowHeight + 2600){
         $(this).addClass("scrollin");
       } else {
         $(this).removeClass("fade_on");
