@@ -27,12 +27,12 @@ div#random_circle{
 }
 
 div#random_randomness{
-
   z-index: 15;
 }
 
+
 .menu-bar{
-  height: 250px;
+  height: 220px;
   background: #AAAAAA;
   margin-right: -100px;
 
@@ -112,6 +112,7 @@ h1, h2, h3, h4, h5, h6 {
   hyphens: auto; }
 
 h1 {
+  color: #ffffff;
   font-size: 2.35em; }
 
 h2 {
