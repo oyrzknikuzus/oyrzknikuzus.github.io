@@ -58,7 +58,7 @@ var sketch2 = function(p) {
   p.draw = function() {
     //p.redraw(60);
     p.frameRate(30);
-    x = p.width / 2;
+    x = p.width * 0.875;
     y = p.height / 4;
     r = p.width / 8;
     p.fill(255, 10);
