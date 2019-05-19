@@ -47,7 +47,7 @@ var sketch1 = function(p) {
 
 var sketch2 = function(p) {
   p.setup = function() {
-    canvas = p.createCanvas(p.windowWidth / 4, p.windowWidth / 4);
+    canvas = p.createCanvas(p.windowWidth / 5, p.windowWidth / 5);
     canvas.position(p.windowWidth * 0.75, -30);
     //canvas.style('z-index', '-1');
     //p.background(255);
@@ -58,8 +58,8 @@ var sketch2 = function(p) {
   p.draw = function() {
     //p.redraw(60);
     p.frameRate(30);
-    x = p.width / 2;
-    y = p.height / 2;
+    x = p.width / 2 + 40;
+    y = p.height / 2 - 30;
     r = p.height * 0.5;
     p.fill(255, 10);
     p.noStroke();

@@ -16,7 +16,9 @@ body {
   margin: auto;
   color: #4a4a4a;
   background-color: #f9f9f9;
-  padding: 13px; }
+  padding: 13px;
+  z-index: 3;
+}
 
 div#random_circle{
   position: fixed;
@@ -28,8 +30,8 @@ div#random_randomness{
   z-index: 15;
 }
 
-.menu-bar{;
-  height: 300px;
+.menu-bar{
+  height: 200px;
   background: #AAAAAA
 
   }
@@ -70,13 +72,18 @@ div#random_randomness{
 
 .fade_off3.scrollin {
   width: 100%;
-
+  height: 100%;
   opacity : 1;
   transform : translate(0, 0);
   position: fixed;
   z-index: 9;
 
 }
+
+
+
+
+
 
 
 
