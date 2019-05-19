@@ -83,10 +83,10 @@ var sketch3 = function(p) {
   const sourceText = "randomness";
 
   p.setup = function() {
-    canvas = p.createCanvas(p.windowWidth / 4, p.windowWidth / 4);
+    canvas = p.createCanvas(p.windowWidth / 2, p.windowWidth / 2);
     canvas.position(0, 0);
     //canvas.style('z-index', '-1');
-    //p.background(255);
+    //p.background(0);
     //p.noLoop();
     p.randomSeed(0);
   };
@@ -102,7 +102,7 @@ var sketch3 = function(p) {
     p.stroke(0);
     p.strokeWeight(1);
     for (i = 0; i < 10; i++){
-      p.text(sourceText.substring(i, i + 1), p.width / 3 + (20 * i) + p.random(-5, 5), 120);
+      p.text(sourceText.substring(i, i + 1), p.width / 4 + (25 * i) + p.random(-5, 5), 120);
       p.fill(p.random(255), p.random(255), 255);
     }
   };
