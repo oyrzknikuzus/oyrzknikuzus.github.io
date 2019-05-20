@@ -60,9 +60,9 @@ var sketch2 = function(p) {
     //p.redraw(60);
     //p.clear();
     p.frameRate(30);
-    x = p.width * 0.6;
-    y = p.height / 7;
-    r = p.width / 12;
+    x = p.width * 0.875;
+    y = p.height / 6;
+    r = p.width / 10;
     p.fill(255, 10);
     p.noStroke();
     x = x + p.random(-5, 5);
