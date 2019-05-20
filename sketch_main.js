@@ -104,9 +104,9 @@ var sketch3 = function(p) {
     p.textFont('Helvetica Neue');
     //textAlign(RIGHT);
     p.stroke(0);
-    p.strokeWeight(0);
+    p.strokeWeight(1);
     for (i = 0; i < 10; i++){
-      p.text(sourceText.substring(i, i + 1), (20 * i) + p.random(0, 5), 80);
+      p.text(sourceText.substring(i, i + 1), (20 * i) + p.random(-3, 10), 80);
       p.fill(p.random(255), p.random(255), 255);
     }
   };
