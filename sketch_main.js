@@ -107,7 +107,7 @@ var sketch3 = function(p) {
     p.strokeWeight(1);
     for (i = 0; i < 10; i++){
       p.text(sourceText.substring(i, i + 1), (30 * i) + p.random(0, 10), 80);
-      p.fill(255);
+      p.fill(p.random(255), p.random(255), 255);
     }
   };
 
