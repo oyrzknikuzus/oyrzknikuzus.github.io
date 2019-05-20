@@ -5,7 +5,7 @@ var sketch1 = function(p) {
 
   p.setup = function() {
     canvas = p.createCanvas(p.windowWidth, p.windowWidth * 4);
-    canvas.position(0, 200);
+    canvas.position(0, 600);
     canvas.style('z-index', '-1');
 
   };
