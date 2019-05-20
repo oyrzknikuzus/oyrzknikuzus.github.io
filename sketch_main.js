@@ -29,7 +29,7 @@ var sketch1 = function(p) {
 
         var toggle = p.int(p.random(0, 2));
         p.strokeWeight((gridY / 8) ** 2);
-        p.stroke('#AAAAAA');
+        p.stroke('#f5f5f5');
 
         if (toggle == 0) {
 
@@ -59,6 +59,7 @@ var sketch2 = function(p) {
   p.draw = function() {
     //p.redraw(60);
     //p.clear();
+    //p.redraw(10);
     p.frameRate(30);
     x = p.width * 0.875;
     y = p.height / 6;
