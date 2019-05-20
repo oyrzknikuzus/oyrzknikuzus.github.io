@@ -31,10 +31,12 @@ div#random_randomness{
 }
 
 
+
 .menu-bar{
-  height: 220px;
-  background: #AAAAAA;
-  margin-right: -13px;
+  height: 200px;
+  width: 1000px;
+  background: #4a4a4a;
+  margin: auto;
 
 
   }

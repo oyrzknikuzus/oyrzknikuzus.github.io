@@ -12,7 +12,7 @@ var sketch1 = function(p) {
 
   p.draw = function() {
     p.noLoop()
-    p.frameRate(1);
+    p.frameRate(10);
     p.noCursor();
     p.clear();
     p.strokeCap(actStrokeCap);
@@ -55,12 +55,14 @@ var sketch2 = function(p) {
     p.randomSeed(0);
   };
 
+
   p.draw = function() {
     //p.redraw(60);
+    //p.clear();
     p.frameRate(30);
-    x = p.width * 0.875;
-    y = p.height / 6;
-    r = p.width / 10;
+    x = p.width * 0.6;
+    y = p.height / 7;
+    r = p.width / 12;
     p.fill(255, 10);
     p.noStroke();
     x = x + p.random(-5, 5);
@@ -92,6 +94,7 @@ var sketch3 = function(p) {
   };
 
   p.draw = function() {
+    //p.clear();
     //p.background(0);
     p.frameRate(10);
     //文字の大きさ
