@@ -66,8 +66,8 @@ var sketch2 = function(p) {
     r = p.width / 10;
     p.fill(255, 10);
     p.noStroke();
-    x = x + p.random(-5, 5);
-    y = y + p.random(-5, 5);
+    x = x + p.random(-1, 1);
+    y = y + p.random(-1, 1);
 
     for (i = 0; i < 2; i++ ){
       p.noFill();
