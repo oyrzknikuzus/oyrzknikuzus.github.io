@@ -27,7 +27,7 @@ div#random_circle{
 }
 
 div#random_background{
-  z-index: 1;
+  z-index: 2;
 }
 
 div#random_randomness{
@@ -94,6 +94,12 @@ div#random_randomness{
   margin-top: -13px;
 
 }
+
+
+
+  .navbar navbar-inverse navbar-fixed-top{
+    z-index: 1;
+  }
 
 
 
@@ -188,10 +194,6 @@ div#random_randomness{
     margin-left: -13px;
     margin-top: -13px;
 
-  }
-
-  .navbar navbar-inverse navbar-fixed-top{
-    background-color: '#000000';
   }
 
 
