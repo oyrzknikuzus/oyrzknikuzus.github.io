@@ -72,6 +72,7 @@ if (windowWidth <= windowSm) {
         r = p.width / 10;
         p.fill(255, 10);
         p.noStroke();
+        p.strokeWeight(0.5);
         x = x + p.random(-5, 5);
         y = y + p.random(-5, 5);
 
@@ -129,6 +130,29 @@ if (windowWidth <= windowSm) {
 
 
 } else {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     //横幅640px超のとき（タブレット、PC）に行う処理を書く
 
 
@@ -206,7 +230,7 @@ if (windowWidth <= windowSm) {
         for (i = 0; i < 2; i++ ){
           p.noFill();
           p.stroke(p.random(255), p.random(255), 255);
-          p.ellipse(x + p.random(-15, 15), y + p.random(-15, 15), r, r);
+          p.ellipse(x + p.random(-10, 10), y + p.random(-10, 10), r, r);
 
         }
       };
