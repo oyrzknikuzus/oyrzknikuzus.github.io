@@ -95,6 +95,9 @@ div#random_randomness{
 
 }
 
+.container{
+  background-color: #000000;
+}
 
 
 @media screen and (max-width: 479px) { /*ウィンドウ幅が最大479pxまでの場合に適用*/
