@@ -34,7 +34,7 @@ if (windowWidth <= windowSm) {
             var posY = p.height / tileCountY * gridY;
 
             var toggle = p.int(p.random(0, 2));
-            p.strokeWeight((gridY / 8) ** 2);
+            p.strokeWeight((gridY / 8) ** 0.5);
             p.stroke('#f5f5f5');
 
             if (toggle == 0) {
