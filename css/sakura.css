@@ -96,7 +96,7 @@ div#random_randomness{
 }
 
 .container{
-  background-color: #000000;
+  position: fixed;
 }
 
 
