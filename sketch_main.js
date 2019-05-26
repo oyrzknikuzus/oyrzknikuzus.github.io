@@ -72,7 +72,7 @@ var sketch2 = function(p) {
     for (i = 0; i < 2; i++ ){
       p.noFill();
       p.stroke(p.random(255), p.random(255), 255);
-      p.ellipse(x + p.random(-10, 10), y + p.random(-10, 10), r, r);
+      p.ellipse(x + p.random(-1, 1), y + p.random(-1, 1), r, r);
 
     }
   };
