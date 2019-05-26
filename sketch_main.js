@@ -187,7 +187,7 @@ if (windowWidth <= windowSm) {
 
             var toggle = p.int(p.random(0, 2));
             p.strokeWeight((gridY / 8) ** 2);
-            p.stroke('#000000');
+            p.stroke('#f5f5f5');
 
             if (toggle == 0) {
 
