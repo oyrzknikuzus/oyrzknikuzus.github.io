@@ -66,8 +66,8 @@ var sketch2 = function(p) {
     r = p.width / 10;
     p.fill(255, 10);
     p.noStroke();
-    x = x + p.random(-1, 1);
-    y = y + p.random(-1, 1);
+    x = x + p.random(-5, 5);
+    y = y + p.random(-5, 5);
 
     for (i = 0; i < 2; i++ ){
       p.noFill();
@@ -106,7 +106,7 @@ var sketch3 = function(p) {
     p.stroke(0);
     p.strokeWeight(1);
     for (i = 0; i < 10; i++){
-      p.text(sourceText.substring(i, i + 1), (30 * i) + p.random(0, 20), 80);
+      p.text(sourceText.substring(i, i + 1), (30 * i) + p.random(0, 15), 80);
       p.fill(p.random(255), p.random(255), 255);
     }
   };
