@@ -10,7 +10,7 @@ if (windowWidth <= windowSm) {
       var actStrokeCap;
 
       p.setup = function() {
-        canvas = p.createCanvas(p.windowWidth, p.windowWidth * 8);
+        canvas = p.createCanvas(p.windowWidth, p.windowWidth * 4);
         canvas.position(0, 0);
         canvas.style('z-index', '-1');
 
@@ -34,7 +34,7 @@ if (windowWidth <= windowSm) {
             var posY = p.height / tileCountY * gridY;
 
             var toggle = p.int(p.random(0, 2));
-            p.strokeWeight(50 - (gridY));
+            p.strokeWeight(30 - (gridY)**0.5);
             p.stroke('#252525');
 
             if (toggle == 0) {
@@ -106,7 +106,7 @@ if (windowWidth <= windowSm) {
         //p.background(0);
         p.frameRate(10);
         //文字の大きさ
-        p.textSize(32);
+        p.textSize(16);
         //フォント
         p.textFont('Helvetica Neue');
         //textAlign(RIGHT);
