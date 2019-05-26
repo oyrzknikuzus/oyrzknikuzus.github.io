@@ -162,8 +162,8 @@ if (windowWidth <= windowSm) {
       var actStrokeCap;
 
       p.setup = function() {
-        canvas = p.createCanvas(p.windowWidth, p.windowWidth * 3);
-        canvas.position(0, 400);
+        canvas = p.createCanvas(p.windowWidth, p.windowWidth * 4);
+        canvas.position(0, 0);
         canvas.style('z-index', '-1');
 
       };
@@ -186,8 +186,8 @@ if (windowWidth <= windowSm) {
             var posY = p.height / tileCountY * gridY;
 
             var toggle = p.int(p.random(0, 2));
-            p.strokeWeight((gridY / 8) ** 2);
-            p.stroke('#000000');
+            p.strokeWeight(50 - (gridY));
+            p.stroke('#252525');
 
             if (toggle == 0) {
 
