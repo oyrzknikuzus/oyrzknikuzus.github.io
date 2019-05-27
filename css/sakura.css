@@ -163,6 +163,7 @@ div#random_randomness{
     opacity : 0;
     transform : translate(0, 50px);
     transition:all 0.5s;
+    z-index: 150;
   }
 
   .fade_off2.scrollin {
