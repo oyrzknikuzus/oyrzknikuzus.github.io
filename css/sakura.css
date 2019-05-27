@@ -96,10 +96,6 @@ div#random_randomness{
 
 }
 
-.navbar-fixed-top{
-  z-index: 200;
-}
-
 
 @media screen and (max-width: 479px) { /*ウィンドウ幅が最大479pxまでの場合に適用*/
 
