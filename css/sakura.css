@@ -27,7 +27,7 @@ div#random_circle{
 }
 
 div#random_background{
-  z-index: 2000;
+  z-index: 4000;
 }
 
 div#random_randomness{
