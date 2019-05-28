@@ -23,6 +23,7 @@ body {
 
 div#random_circle{
   /*position: fixed;*/
+  position: absolute;
   z-index: 4000;
 
 }
