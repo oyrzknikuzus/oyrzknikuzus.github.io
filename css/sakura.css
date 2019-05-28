@@ -119,18 +119,22 @@ div#random_randomness{
 
 
   }
-
   div#random_circle{
     position: fixed;
-    z-index: 180;
+    z-index: 2500;
+
   }
 
   div#random_background{
-    z-index: 10;
+    z-index: 3000;
+    position: absolute;
+    margin-left: -13px;
+
   }
 
   div#random_randomness{
-    z-index: 150;
+    z-index: 1500;
+
   }
 
 
@@ -167,14 +171,14 @@ div#random_randomness{
     opacity : 0;
 
     transition:all 0.5s;
-    z-index: 150;
+    z-index: 1500;
   }
 
   .fade_off2.scrollin {
     opacity : 1;
 
     position: fixed;
-    z-index: 150;
+    z-index: 1500;
   }
 
 
