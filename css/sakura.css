@@ -28,7 +28,7 @@ div#random_circle{
 }
 
 div#random_background{
-  z-index: auto;
+  z-index: 3000;
   position: absolute;
 }
 
