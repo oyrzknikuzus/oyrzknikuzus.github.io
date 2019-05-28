@@ -12,7 +12,7 @@ if (windowWidth <= windowSm) {
       p.setup = function() {
         canvas = p.createCanvas(p.windowWidth, p.windowWidth * 2);
         canvas.position(0, 0);
-        canvas.style('z-index', '-1');
+        //canvas.style('z-index', '-1');
 
       };
 
