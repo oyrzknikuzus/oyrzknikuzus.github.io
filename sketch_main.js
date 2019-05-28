@@ -69,17 +69,17 @@ if (windowWidth <= windowSm) {
         p.frameRate(20);
         x = p.width * 0.5;
         y = p.height / 2;
-        r = p.width / 4;
+        r = p.width / 3;
         p.fill(255, 10);
         p.noStroke();
         p.strokeWeight(0.5);
-        x = x + p.random(-13, 13);
-        y = y + p.random(-13, 13);
+        x = x + p.random(-10, 10);
+        y = y + p.random(-10, 10);
 
         for (i = 0; i < 1; i++ ){
           p.noFill();
           p.stroke(p.random(255), p.random(255), 255);
-          p.ellipse(x + p.random(0, 3), y + p.random(0, 3), r, r);
+          p.ellipse(x + p.random(0, 1), y + p.random(0, 1), r, r);
 
         }
       };
