@@ -104,7 +104,7 @@ if (windowWidth <= windowSm) {
       p.draw = function() {
         //p.clear();
         //p.background(0);
-        p.frameRate(10);
+        p.frameRate(20);
         //文字の大きさ
         p.textSize(16);
         //フォント
@@ -112,7 +112,7 @@ if (windowWidth <= windowSm) {
         //textAlign(RIGHT);
         p.stroke(0);
         p.strokeWeight(1);
-        for (i = 0; i < 10; i++){
+        for (i = 0; i < 1; i++){
           p.text(sourceText.substring(i, i + 1), (30 * i) + p.random(0, 15), 80);
           p.fill(p.random(255), p.random(255), 255);
         }
@@ -220,7 +220,7 @@ if (windowWidth <= windowSm) {
         //p.redraw(60);
         //p.clear();
         //p.redraw(10);
-        p.frameRate(30);
+        p.frameRate(20);
         x = p.width * 0.875;
         y = p.height / 6;
         r = p.width / 10;
@@ -229,7 +229,7 @@ if (windowWidth <= windowSm) {
         x = x + p.random(-5, 5);
         y = y + p.random(-5, 5);
 
-        for (i = 0; i < 2; i++ ){
+        for (i = 0; i < 1; i++ ){
           p.noFill();
           p.stroke(p.random(255), p.random(255), 255);
           p.ellipse(x + p.random(-10, 10), y + p.random(-10, 10), r, r);
