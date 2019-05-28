@@ -24,17 +24,17 @@ body {
 div#random_circle{
   position: fixed;
   z-index: 2500;
-  
+
 }
 
 div#random_background{
   z-index: 3000;
-  position: absolute;
+
 }
 
 div#random_randomness{
   z-index: 1500;
-  position: absolute;
+
 }
 
 
@@ -69,14 +69,14 @@ div#random_randomness{
 
 .fade_off2 {
   opacity : 0;
-  position: absolute;
+
   transition:all 0.5s;
   z-index: 1500;
 }
 
 .fade_off2.scrollin {
   opacity : 1;
-  position: absolute;
+  
   position: fixed;
   z-index: 1500;
 }
