@@ -66,7 +66,7 @@ if (windowWidth <= windowSm) {
         //p.redraw(60);
         //p.clear();
         //p.redraw(10);
-        p.frameRate(30);
+        p.frameRate(20);
         x = p.width * 0.875;
         y = p.height / 6;
         r = p.width / 10;
@@ -104,7 +104,7 @@ if (windowWidth <= windowSm) {
       p.draw = function() {
         //p.clear();
         //p.background(0);
-        p.frameRate(20);
+        p.frameRate(8);
         //文字の大きさ
         p.textSize(16);
         //フォント
