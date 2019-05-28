@@ -24,7 +24,7 @@ body {
 div#random_circle{
   position: fixed;
   z-index: 2500;
-  position: absolute;
+  
 }
 
 div#random_background{
