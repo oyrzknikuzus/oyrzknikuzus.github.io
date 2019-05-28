@@ -53,7 +53,7 @@ if (windowWidth <= windowSm) {
 
     var sketch2 = function(p) {
       p.setup = function() {
-        canvas = p.createCanvas(p.windowWidth, p.windowWidth / 2);
+        canvas = p.createCanvas(p.windowWidth, p.windowHeight);
         canvas.position(0, 0);
         //canvas.style('z-index', '-1');
         //p.background(0);
@@ -67,19 +67,19 @@ if (windowWidth <= windowSm) {
         //p.clear();
         //p.redraw(10);
         p.frameRate(20);
-        x = p.width * 0.875;
-        y = p.height / 6;
-        r = p.width / 10;
+        x = p.width * 0.5;
+        y = p.height / 2;
+        r = p.width / 4;
         p.fill(255, 10);
         p.noStroke();
         p.strokeWeight(0.5);
-        x = x + p.random(-5, 5);
-        y = y + p.random(-5, 5);
+        x = x + p.random(-13, 13);
+        y = y + p.random(-13, 13);
 
         for (i = 0; i < 1; i++ ){
           p.noFill();
           p.stroke(p.random(255), p.random(255), 255);
-          p.ellipse(x + p.random(0, 1), y + p.random(0, 1), r, r);
+          p.ellipse(x + p.random(0, 3), y + p.random(0, 3), r, r);
 
         }
       };

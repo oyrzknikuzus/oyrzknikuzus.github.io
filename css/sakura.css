@@ -124,7 +124,8 @@ div#random_randomness{
 
   div#random_circle{
     /*position: fixed;*/
-    z-index: 4000;
+    position: absolute;
+    z-index: 4600;
 
   }
 
