@@ -23,15 +23,15 @@ body {
 
 div#random_circle{
   position: fixed;
-  z-index: 180;
+  z-index: 2500;
 }
 
 div#random_background{
-  z-index: 1500;
+  z-index: 2000;
 }
 
 div#random_randomness{
-  z-index: 150;
+  z-index: 1500;
 }
 
 
