@@ -234,7 +234,7 @@ if (windowWidth <= windowSm) {
         //y = y + p.random(-5, 5);
 
         x = p.width / 2;
-        y = p.height / 4;
+        y = p.height / 2;
         r = p.width / 4;
 
         p.fill(255, 10);
