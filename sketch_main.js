@@ -76,7 +76,7 @@ if (windowWidth <= windowSm) {
         x = x + p.random(-5, 5);
         y = y + p.random(-5, 5);
 
-        for (i = 0; i < 2; i++ ){
+        for (i = 0; i < 1; i++ ){
           p.noFill();
           p.stroke(p.random(255), p.random(255), 255);
           p.ellipse(x + p.random(0, 1), y + p.random(0, 1), r, r);
@@ -90,7 +90,7 @@ if (windowWidth <= windowSm) {
 
 
     var sketch3 = function(p) {
-      const sourceText = "randomness";
+      const sourceText = "W/ raNdOmneSs";
 
       p.setup = function() {
         canvas = p.createCanvas(p.windowWidth, p.windowWidth / 2);
@@ -112,8 +112,8 @@ if (windowWidth <= windowSm) {
         //textAlign(RIGHT);
         p.stroke(0);
         p.strokeWeight(1);
-        for (i = 0; i < 1; i++){
-          p.text(sourceText.substring(i, i + 1), (30 * i) + p.random(0, 15), 80);
+        for (i = 0; i < 15; i++){
+          p.text(sourceText.substring(i, i + 1), (10 * i) + p.random(0, 15), 80);
           p.fill(p.random(255), p.random(255), 255);
         }
       };
@@ -243,7 +243,7 @@ if (windowWidth <= windowSm) {
 
 
     var sketch3 = function(p) {
-      const sourceText = "randomness";
+      const sourceText = "W/ raNdOmneSs";
 
       p.setup = function() {
         canvas = p.createCanvas(p.windowWidth, p.windowWidth / 2);
@@ -257,7 +257,7 @@ if (windowWidth <= windowSm) {
       p.draw = function() {
         //p.clear();
         //p.background(0);
-        p.frameRate(10);
+        p.frameRate(8);
         //文字の大きさ
         p.textSize(32);
         //フォント
@@ -265,8 +265,8 @@ if (windowWidth <= windowSm) {
         //textAlign(RIGHT);
         p.stroke(0);
         p.strokeWeight(1);
-        for (i = 0; i < 10; i++){
-          p.text(sourceText.substring(i, i + 1), (30 * i) + p.random(0, 15), 80);
+        for (i = 0; i < 15; i++){
+          p.text(sourceText.substring(i, i + 1), (25 * i) + p.random(0, 15), 80);
           p.fill(p.random(255), p.random(255), 255);
         }
       };
