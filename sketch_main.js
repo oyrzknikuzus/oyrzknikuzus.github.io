@@ -102,7 +102,7 @@ if (windowWidth <= windowSm) {
       };
 
       p.draw = function() {
-        //p.clear();
+        p.clear();
         //p.background(0);
         p.frameRate(8);
         //文字の大きさ
@@ -270,7 +270,7 @@ if (windowWidth <= windowSm) {
       };
 
       p.draw = function() {
-        //p.clear();
+        p.clear();
         //p.background(0);
         p.frameRate(8);
         //文字の大きさ
