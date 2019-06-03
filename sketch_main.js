@@ -274,14 +274,14 @@ if (windowWidth <= windowSm) {
         //p.background(0);
         p.frameRate(8);
         //文字の大きさ
-        p.textSize(32);
+        p.textSize(24);
         //フォント
         p.textFont('Helvetica Neue');
         //textAlign(RIGHT);
         p.stroke(0);
         p.strokeWeight(1);
         for (i = 0; i < 15; i++){
-          p.text(sourceText.substring(i, i + 1), (25 * i) + p.random(0, 15), 20);
+          p.text(sourceText.substring(i, i + 1), (25 * i) + p.random(0, 15), 30);
           p.fill(p.random(255), p.random(255), 255);
         }
       };
