@@ -281,7 +281,7 @@ if (windowWidth <= windowSm) {
         p.stroke(0);
         p.strokeWeight(1);
         for (i = 0; i < 15; i++){
-          p.text(sourceText.substring(i, i + 1), (25 * i) + p.random(0, 15), 30);
+          p.text(sourceText.substring(i, i + 1), (15 * i) + p.random(0, 15), 20);
           p.fill(p.random(255), p.random(255), 255);
         }
       };
