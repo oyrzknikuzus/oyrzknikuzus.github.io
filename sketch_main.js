@@ -19,7 +19,7 @@ if (windowWidth <= windowSm) {
       p.draw = function() {
         p.noLoop()
         p.frameRate(10);
-        p.noCursor();
+        //p.noCursor();
         p.clear();
         p.strokeCap(actStrokeCap);
         //p.randomSeed(actRandomSeed);
@@ -173,7 +173,7 @@ if (windowWidth <= windowSm) {
       p.draw = function() {
         p.noLoop()
         p.frameRate(10);
-        p.noCursor();
+        //p.noCursor();
         p.clear();
         p.strokeCap(actStrokeCap);
         //p.randomSeed(actRandomSeed);
