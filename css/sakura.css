@@ -77,7 +77,7 @@ a#randomness:hover {
 
 .fade_off1.scrollin {
   opacity : 0;
-  display: none;
+
 
   position: fixed;
   z-index: 2500;
@@ -190,7 +190,7 @@ a#randomness:hover {
 
   .fade_off1.scrollin {
     opacity: 0;
-    display: none;
+    
     position: fixed;
     z-index: 2500;
   }
