@@ -159,6 +159,7 @@ a#randomness:hover > span:hover {
 
   }
 
+  /*
   a#randomness{
     width:180px;
     background-color:red;
@@ -166,9 +167,17 @@ a#randomness:hover > span:hover {
   }
 
   a#randomness:hover {
-    width:240px;
+    width:500px;
     background-color:blue;
 
+  }
+  */
+
+  a#randomness:hover > span {
+  	opacity: 0.5;
+  }
+  a#randomness:hover > span:hover {
+  	opacity: 1.0;
   }
 
 
