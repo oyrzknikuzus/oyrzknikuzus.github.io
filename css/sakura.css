@@ -41,7 +41,7 @@ div#random_randomness{
 }
 
 a#randomness{
-  width:200px;
+  width:140px;
   background-color:red;
   transition-duration:3s;
 }
