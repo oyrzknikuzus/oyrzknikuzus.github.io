@@ -55,7 +55,7 @@ if (windowWidth <= windowSm) {
     var sketch2 = function(p) {
       p.setup = function() {
         canvas = p.createCanvas(p.windowWidth, p.windowHeight);
-        canvas.position(0, 0);
+        canvas.position(-13, -13);
         //canvas.style('z-index', '-1');
         p.background(0);
         //p.noLoop();
@@ -214,7 +214,7 @@ if (windowWidth <= windowSm) {
 
         canvas.position(-13, -13);
         //canvas.style('z-index', '-1');
-        p.background(0);
+        p.background(0, 1);
         //p.noLoop();
         p.randomSeed(0);
       };
