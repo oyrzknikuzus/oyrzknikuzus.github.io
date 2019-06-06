@@ -40,14 +40,14 @@ div#random_randomness{
 
 }
 
-a#randomness{
-  width:50px;
+.navbar-brand{
+  width:10px;
   background-color:red;
   transition-duration:3s;
 }
 
-a#randomness:hover {
-  width:300px;
+.navbar-brand:hover {
+  width:50px;
   background-color:blue;
 
 }
