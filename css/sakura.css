@@ -40,17 +40,7 @@ div#random_randomness{
 
 }
 
-.navbar-brand{
-  width:10px;
-  background-color:red;
-  transition-duration:3s;
-}
 
-.navbar-brand:hover {
-  width:50px;
-  background-color:blue;
-
-}
 
 
 .menu-bar{
