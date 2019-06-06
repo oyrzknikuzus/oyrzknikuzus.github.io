@@ -10,7 +10,7 @@ if (windowWidth <= windowSm) {
       var actStrokeCap;
 
       p.setup = function() {
-        canvas = p.createCanvas(p.windowWidth, p.windowWidth * 2);
+        canvas = p.createCanvas(p.windowWidth, p.windowHeight);
         canvas.position(0, 0);
         //canvas.style('z-index', '-1');
 
