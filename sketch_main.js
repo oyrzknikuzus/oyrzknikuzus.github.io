@@ -214,7 +214,7 @@ if (windowWidth <= windowSm) {
 
         canvas.position(-13, -13);
         //canvas.style('z-index', '-1');
-        p.background('white');
+        p.background('white', [125]);
         //p.noLoop();
         p.randomSeed(0);
       };
