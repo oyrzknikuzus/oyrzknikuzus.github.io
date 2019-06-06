@@ -57,7 +57,7 @@ if (windowWidth <= windowSm) {
         canvas = p.createCanvas(p.windowWidth, p.windowHeight);
         canvas.position(-13, -13);
         //canvas.style('z-index', '-1');
-        p.background(0);
+        p.background(255, 255, 255, 240);
         //p.noLoop();
         p.randomSeed(0);
       };
@@ -240,12 +240,13 @@ if (windowWidth <= windowSm) {
 
         p.fill(255, 10);
         p.noStroke();
-        p.strokeWeight(1)
+
         x = x + p.random(-15, 15);
         y = y + p.random(-15, 15);
 
 
         for (i = 0; i < 1; i++ ){
+          p.strokeWeight(p.random(1, 3))
           p.noFill();
           p.stroke(p.random(255), p.random(255), 255);
           p.ellipse(x + p.random(-15, 15), y + p.random(-15, 15), r, r);
