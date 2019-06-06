@@ -41,13 +41,13 @@ div#random_randomness{
 }
 
 a#randomness{
-  width:10px;
+  width:200px;
   background-color:red;
   transition-duration:3s;
 }
 
 a#randomness:hover {
-  width:30px;
+  width:500px;
   background-color:blue;
 
 }
