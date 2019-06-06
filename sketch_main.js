@@ -67,13 +67,13 @@ if (windowWidth <= windowSm) {
         //p.redraw(60);
         //p.clear();
         //p.redraw(10);
-        p.frameRate(10);
+        p.frameRate(20);
         x = p.width * 0.5;
         y = p.height / 2;
         r = p.width / 3;
         p.fill(255, 10);
         p.noStroke();
-        p.strokeWeight(p.random(0.5, 3));
+        p.strokeWeight(p.random(0.5, 2));
 
         x = x + p.random(-10, 10);
         y = y + p.random(-10, 10);
@@ -226,7 +226,7 @@ if (windowWidth <= windowSm) {
         //p.redraw(60);
         //p.clear();
         //p.redraw(10);
-        p.frameRate(10);
+        p.frameRate(20);
         //x = p.width * 0.875;
         //y = p.height / 6;
         //r = p.width / 10;
@@ -242,7 +242,7 @@ if (windowWidth <= windowSm) {
 
         p.fill(255, 10);
         p.noStroke();
-        p.strokeWeight(p.random(0.5, 5));
+        p.strokeWeight(p.random(0.5, 2));
 
         x = x + p.random(-15, 15);
         y = y + p.random(-15, 15);
