@@ -40,6 +40,17 @@ div#random_randomness{
 
 }
 
+a#randomness{
+  width:50px;
+  background-color:red;
+  transition-duration:3s;
+}
+
+a#randomness:hover {
+  width:300px;
+  background-color:blue;
+
+}
 
 
 .menu-bar{
