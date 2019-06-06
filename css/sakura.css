@@ -61,6 +61,7 @@ a#randomness:hover > span:hover {
 }
 
 a#randomness:hover > .blink1 {
+  font-weight: bold;
   opacity: 1;
   -webkit-animation: flash 1s;
   animation: flash 1s;
