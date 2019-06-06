@@ -69,14 +69,14 @@ a#randomness:hover {
 
 
 .fade_off1 {
-  opacity : 0;
+  opacity : 1;
 
   transition:all 1.5s;
   z-index: 2500;
 }
 
 .fade_off1.scrollin {
-  opacity : 1;
+  opacity : 0;
 
   position: fixed;
   z-index: 2500;
