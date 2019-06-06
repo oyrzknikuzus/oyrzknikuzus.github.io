@@ -10,7 +10,7 @@ html {
   font-family: serif;
   color: #4a4a4a; }
 
-body {
+.mybody {
   font-size: 2.4rem;
   line-height: 1.618;
   margin: auto;
