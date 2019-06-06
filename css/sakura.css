@@ -29,7 +29,7 @@ div#random_circle{
 }
 
 div#random_background{
-  z-index: 3000;
+  z-index: 1000;
   position: absolute;
   margin-left: -13px;
 
