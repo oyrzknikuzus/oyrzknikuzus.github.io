@@ -53,10 +53,10 @@ a#randomness:hover {
 }
 */
 
-.navbar-brand:hover > span {
+a#randomness:hover > span {
 	opacity: 0.5;
 }
-.navbar-brand:hover > span:hover {
+a#randomness:hover > span:hover {
 	opacity: 1.0;
 }
 
