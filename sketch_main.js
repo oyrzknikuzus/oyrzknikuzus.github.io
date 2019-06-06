@@ -67,7 +67,7 @@ if (windowWidth <= windowSm) {
         //p.redraw(60);
         //p.clear();
         //p.redraw(10);
-        p.frameRate(5);
+        p.frameRate(10);
         x = p.width * 0.5;
         y = p.height / 2;
         r = p.width / 3;
@@ -225,7 +225,7 @@ if (windowWidth <= windowSm) {
         //p.redraw(60);
         //p.clear();
         //p.redraw(10);
-        p.frameRate(5);
+        p.frameRate(10);
         //x = p.width * 0.875;
         //y = p.height / 6;
         //r = p.width / 10;
