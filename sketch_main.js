@@ -124,7 +124,7 @@ if (windowWidth <= windowSm) {
 
     new p5(sketch1, "random_background");
     new p5(sketch2, "random_circle");
-    new p5(sketch3, "random_randomness");
+    //new p5(sketch3, "random_randomness");
 
 
 
@@ -292,7 +292,7 @@ if (windowWidth <= windowSm) {
 
     new p5(sketch1, "random_background");
     new p5(sketch2, "random_circle");
-    new p5(sketch3, "random_randomness");
+    //new p5(sketch3, "random_randomness");
 
 
 
