@@ -82,7 +82,7 @@ a#randomness:hover > .blink1 {
   }
   100% {
     opacity: 1;
-    
+
   }
 }
 
@@ -209,6 +209,7 @@ a#randomness:hover > .blink1 {
   }
 
   a#randomness:hover > .blink1 {
+    font-weight: bold;
     opacity: 1;
     -webkit-animation: flash 1s;
     animation: flash 1s;
@@ -229,9 +230,9 @@ a#randomness:hover > .blink1 {
     }
     100% {
       opacity: 1;
+
     }
   }
-
 
   .menu-bar{
     height: 200px;
