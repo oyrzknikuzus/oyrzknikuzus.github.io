@@ -73,12 +73,13 @@ if (windowWidth <= windowSm) {
         r = p.width / 3;
         p.fill(255, 10);
         p.noStroke();
+        p.strokeWeight(p.random(0.5, 3));
 
         x = x + p.random(-10, 10);
         y = y + p.random(-10, 10);
 
         for (i = 0; i < 1; i++ ){
-          p.strokeWeight(p.random(0.5, 1.5));
+
           p.noFill();
           p.stroke(p.random(255), p.random(255), 255);
           p.ellipse(x + p.random(-1, 1), y + p.random(-1, 1), r, r);
@@ -241,13 +242,14 @@ if (windowWidth <= windowSm) {
 
         p.fill(255, 10);
         p.noStroke();
+        p.strokeWeight(p.random(0.5, 5));
 
         x = x + p.random(-15, 15);
         y = y + p.random(-15, 15);
 
 
         for (i = 0; i < 1; i++ ){
-          p.strokeWeight(p.random(1, 3));
+
           p.noFill();
           p.stroke(p.random(255), p.random(255), 255);
           p.ellipse(x + p.random(-15, 15), y + p.random(-15, 15), r, r);
