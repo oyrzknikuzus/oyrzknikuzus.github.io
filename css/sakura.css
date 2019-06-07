@@ -23,7 +23,7 @@ html {
 
 div#random_circle{
   /*position: fixed;*/
-  position: absolute;
+  position: fixed;
   z-index: 4600;
   animation: anime 3s;
   animation-delay: 4s;
@@ -182,7 +182,7 @@ a#randomness:hover > .blink1 {
   }
   div#random_circle{
     /*position: fixed;*/
-    position: absolute;
+    position: fixed;
     z-index: 4600;
     animation: anime 3s;
     animation-delay: 4s;
