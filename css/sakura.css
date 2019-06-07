@@ -290,14 +290,14 @@ a#randomness:hover > .blink1 {
   }
   */
 
-  a#randomness:active > span {
+  a#randomness:hover > span {
   	opacity: 0.5;
   }
-  a#randomness:active > span:active {
+  a#randomness:hover > span:hover {
   	opacity: 1.0;
   }
 
-  a#randomness:active > .blink1 {
+  a#randomness:hover > .blink1 {
     font-weight: bold;
     opacity: 1;
     -webkit-animation: flash 1s;
