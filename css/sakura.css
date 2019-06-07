@@ -28,11 +28,6 @@ div#random_circle{
 
 }
 
-div#random_circle:hover {
-	display: none;
-  transition-duration: 1.0s;
-}
-
 div#random_background{
   z-index: 3000;
   position: absolute;
@@ -107,7 +102,7 @@ a#randomness:hover > .blink1 {
   margin-right: -13px;
   }
 
-/*
+
 .fade_off1 {
   opacity : 1;
 
@@ -121,7 +116,7 @@ a#randomness:hover > .blink1 {
   position: fixed;
   z-index: 2500;
 }
-*/
+
 .fade_off2 {
   opacity : 0;
 
