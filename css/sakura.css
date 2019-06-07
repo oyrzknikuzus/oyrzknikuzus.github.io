@@ -98,7 +98,7 @@ a#randomness:hover > span:hover {
 }
 
 .blink1{
-  transition: 1s;
+  transition: 0.5s;
 }
 
 
@@ -300,6 +300,11 @@ a#randomness:hover > .blink1 {
   }
   a#randomness:hover > span:hover {
   	opacity: 1.0;
+  }
+
+
+  .blink1{
+    transition: 0.5s;
   }
 
   a#randomness:hover > .blink1 {
