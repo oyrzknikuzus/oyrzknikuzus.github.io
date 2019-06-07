@@ -25,15 +25,20 @@ div#random_circle{
   /*position: fixed;*/
   position: absolute;
   z-index: 4600;
-  animation-name: 'anime';
+  animation-name: anime;
   animation-duration: 3s;
   opacity: 1;
 
 }
 
-@keyframes 'anime' {
-  0% {opacity:1;}
-  100% {opacity:0;}
+@keyframes anime {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+
+  }
 }
 
 
