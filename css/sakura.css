@@ -85,28 +85,16 @@ a#randomness:hover > span {
 	opacity: 0.5;
 }
 a#randomness:hover > span:hover {
-
+  opacity: 1.0;
   animation: blink 0.1s step-end infinite;
   -webkit-animation: blink 0.1s step-end infinite;
 }
 
 @keyframes blink {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-
-  }
+  75% { opacity: 0.0; }
 }
 @-webkit-keyframes blink {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-
-  }
+  75% { opacity: 0.0; }
 }
 
 .blink1{
