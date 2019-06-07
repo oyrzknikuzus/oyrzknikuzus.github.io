@@ -26,6 +26,7 @@ div#random_circle{
   position: absolute;
   z-index: 4600;
   animation: anime 3s;
+  animation-delay: 5s;
   animation-fill-mode: forwards;
 
 }
@@ -77,19 +78,10 @@ a#randomness:hover > span:hover {
 a#randomness:hover > .blink1 {
   font-weight: bold;
   opacity: 1;
-  -webkit-animation: flash 1s;
+
   animation: flash 1s;
 }
 
-@-webkit-keyframes flash {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-
-  }
-}
 @keyframes flash {
   0% {
     opacity: 0;
