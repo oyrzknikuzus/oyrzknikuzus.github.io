@@ -179,12 +179,24 @@ a#randomness:hover > .blink1 {
 
 
   }
-
   div#random_circle{
     /*position: fixed;*/
     position: absolute;
     z-index: 4600;
+    animation: anime 3s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
 
+  }
+
+  @keyframes anime {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+
+    }
   }
 
   div#random_background{
@@ -260,7 +272,7 @@ a#randomness:hover > .blink1 {
     margin-right: -13px;
     }
 
-
+/*
   .fade_off1 {
     opacity : 1;
 
@@ -274,7 +286,7 @@ a#randomness:hover > .blink1 {
     position: fixed;
     z-index: 2500;
   }
-
+*/
   .fade_off2 {
     opacity : 0;
 
