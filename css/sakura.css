@@ -85,6 +85,7 @@ a#randomness:hover > span {
 	opacity: 0.5;
 }
 a#randomness:hover > span:hover {
+  opacity: 1.0;
   animation: blink 1s step-end infinite;
 }
 
