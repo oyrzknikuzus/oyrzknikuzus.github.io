@@ -87,14 +87,26 @@ a#randomness:hover > span {
 a#randomness:hover > span:hover {
   opacity: 1.0;
   animation: blink 0.1s step-end infinite;
-  -webkit-animation: blink 0.11s step-end infinite;
+  -webkit-animation: blink 0.1s step-end infinite;
 }
 
 @keyframes blink {
-  75% { opacity: 0.0; }
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+
+  }
 }
 @-webkit-keyframes blink {
-  75% { opacity: 0.0; }
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+
+  }
 }
 
 .blink1{
@@ -299,9 +311,20 @@ a#randomness:hover > .blink1 {
   	opacity: 0.5;
   }
   a#randomness:hover > span:hover {
-  	opacity: 1.0;
+    opacity: 1.0;
+    animation: blink 0.1s step-end infinite;
+    -webkit-animation: blink 0.1s step-end infinite;
   }
 
+  @keyframes blink {
+    75% { opacity: 0.0; }
+
+
+
+  }
+  @-webkit-keyframes blink {
+    75% { opacity: 0.0; }
+  }
 
   .blink1{
     transition: 0.1s;
