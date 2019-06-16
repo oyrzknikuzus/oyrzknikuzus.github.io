@@ -156,39 +156,54 @@ a#randomness:hover > .blink1 {
   margin-right: -13px;
   }
 
-/*
-.fade_off1 {
-  opacity : 1;
+div#script1{
+  font-size: 80px;
+  padding-top: 400px;
+  padding-left: 80px;
+}
 
-  transition:all 1.5s;
-  z-index: 2500;
+
+.fade_off1 {
+  opacity : 0.2;
+
+  transition:all 0.5s;
 }
 
 .fade_off1.scrollin {
-  opacity : 0;
+  width: 100%;
+  opacity : 1;
 
-  position: fixed;
-  z-index: 2500;
+
+  z-index: 9;
+
+
 }
-*/
+
+div#script2{
+  font-size: 80px;
+  padding-top: 600px;
+  padding-left: 80px;
+}
+
+
 .fade_off2 {
-  opacity : 0;
+  opacity : 0.2;
 
   transition:all 0.5s;
-  z-index: 1500;
 }
 
 .fade_off2.scrollin {
+  width: 100%;
   opacity : 1;
 
-  position: fixed;
-  z-index: 1500;
+
+  z-index: 9;
+
+
 }
 
 
-
-
-div#script1{
+div#script3{
   font-size: 80px;
   padding-top: 800px;
   padding-left: 80px;
@@ -375,39 +390,55 @@ div#script1{
     margin-right: -13px;
     }
 
-/*
-  .fade_off1 {
-    opacity : 1;
+  div#script1{
+    font-size: 80px;
+    padding-top: 400px;
+    padding-left: 80px;
+  }
 
-    transition:all 3.0s;
-    z-index: 2500;
+
+  .fade_off1 {
+    opacity : 0.2;
+
+    transition:all 0.5s;
   }
 
   .fade_off1.scrollin {
-    opacity: 0;
-
-    position: fixed;
-    z-index: 2500;
-  }
-*/
-  .fade_off2 {
-    opacity : 0;
-
-    transition:all 0.5s;
-    z-index: 1500;
-  }
-
-  .fade_off2.scrollin {
+    width: 100%;
     opacity : 1;
 
-    position: fixed;
-    z-index: 1500;
+    z-index: 9;
+
+
   }
 
 
-  div#script1{
+div#script2{
+  font-size: 80px;
+  padding-top: 800px;
+  padding-left: 80px;
+}
+
+
+.fade_off2 {
+  opacity : 0.2;
+
+  transition:all 0.5s;
+}
+
+.fade_off2.scrollin {
+  width: 100%;
+  opacity : 1;
+
+  z-index: 9;
+
+
+}
+
+
+  div#script3{
     font-size: 80px;
-    padding-top: 800px;
+    padding-top: 600px;
     padding-left: 80px;
   }
 
