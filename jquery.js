@@ -60,6 +60,8 @@ if (window.matchMedia( "(max-width: 768px)" ).matches) {
 
 
 
+
+
   $(function(){
     $(window).scroll(function (){
       $(".fade_off1").each(function(){
