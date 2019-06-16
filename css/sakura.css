@@ -21,11 +21,7 @@ html {
 
 }
 
-div#script1{
-  font-size: 80px;
-  padding-top: 800px;
-  padding-left: 80px;
-}
+
 
 
 div#random_circle{
@@ -190,6 +186,15 @@ a#randomness:hover > .blink1 {
 }
 
 
+
+
+div#script1{
+  font-size: 80px;
+  padding-top: 800px;
+  padding-left: 80px;
+}
+
+
 .fade_off3 {
   opacity : 0.2;
 
@@ -255,11 +260,7 @@ a#randomness:hover > .blink1 {
 
 
   }
-  div#script1{
-    font-size: 80px;
-    padding-top: 800px;
-    padding-left: 80px;
-  }
+
 
 
 
@@ -401,6 +402,13 @@ a#randomness:hover > .blink1 {
 
     position: fixed;
     z-index: 1500;
+  }
+
+
+  div#script1{
+    font-size: 80px;
+    padding-top: 800px;
+    padding-left: 80px;
   }
 
 

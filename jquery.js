@@ -1,4 +1,8 @@
 if (window.matchMedia( "(max-width: 768px)" ).matches) {
+
+
+#スマホ用
+
   $(function(){
     $(window).scroll(function (){
       $(".fade_off1").each(function(){
@@ -46,6 +50,17 @@ if (window.matchMedia( "(max-width: 768px)" ).matches) {
     });
   });
 }else{
+
+
+
+
+
+
+
+＃PC用
+
+
+  
   $(function(){
     $(window).scroll(function (){
       $(".fade_off1").each(function(){
