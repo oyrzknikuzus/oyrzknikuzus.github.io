@@ -9,7 +9,7 @@ if (window.matchMedia( "(max-width: 768px)" ).matches) {
         var imgPos = $(this).offset().top;
         var scroll = $(window).scrollTop();
         var windowHeight = $(window).height();
-        if (scroll > imgPos - windowHeight + 500){
+        if (scroll > imgPos - windowHeight + 100){
           $(this).addClass("scrollin");
         } else {
           $(this).removeClass("fade_on");
@@ -26,7 +26,7 @@ if (window.matchMedia( "(max-width: 768px)" ).matches) {
         var imgPos = $(this).offset().top;
         var scroll = $(window).scrollTop();
         var windowHeight = $(window).height();
-        if (scroll > imgPos - windowHeight + 700){
+        if (scroll > imgPos - windowHeight + 2600){
           $(this).addClass("scrollin");
         } else {
           $(this).removeClass("fade_on");
@@ -57,7 +57,7 @@ if (window.matchMedia( "(max-width: 768px)" ).matches) {
 
 
 
-＃PC用
+
 
 
 
@@ -67,7 +67,7 @@ if (window.matchMedia( "(max-width: 768px)" ).matches) {
         var imgPos = $(this).offset().top;
         var scroll = $(window).scrollTop();
         var windowHeight = $(window).height();
-        if (scroll > imgPos - windowHeight + 500){
+        if (scroll > imgPos - windowHeight + 100){
           $(this).addClass("scrollin");
         } else {
           $(this).removeClass("fade_on");
@@ -84,7 +84,7 @@ if (window.matchMedia( "(max-width: 768px)" ).matches) {
         var imgPos = $(this).offset().top;
         var scroll = $(window).scrollTop();
         var windowHeight = $(window).height();
-        if (scroll > imgPos - windowHeight + 700){
+        if (scroll > imgPos - windowHeight + 2600){
           $(this).addClass("scrollin");
         } else {
           $(this).removeClass("fade_on");
@@ -99,7 +99,7 @@ if (window.matchMedia( "(max-width: 768px)" ).matches) {
         var imgPos = $(this).offset().top;
         var scroll = $(window).scrollTop();
         var windowHeight = $(window).height();
-        if (scroll > imgPos - windowHeight + 900){
+        if (scroll > imgPos - windowHeight + 1300){
           $(this).addClass("scrollin");
         } else {
           $(this).removeClass("fade_on");
