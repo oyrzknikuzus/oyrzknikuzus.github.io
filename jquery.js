@@ -1,7 +1,6 @@
 if (window.matchMedia( "(max-width: 768px)" ).matches) {
 
 
-#スマホ用
 
   $(function(){
     $(window).scroll(function (){
