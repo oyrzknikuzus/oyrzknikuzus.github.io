@@ -175,20 +175,27 @@ a#randomness:hover > .blink1 {
 
 
 
+div#script2{
+  font-size: 80px;
+  padding-top: 700px;
+  padding-left: 80px;
+}
+
 .fade_off2 {
-  opacity : 0;
+  opacity : 0.2;
 
   transition:all 0.5s;
-  z-index: 1500;
 }
 
 .fade_off2.scrollin {
+  width: 100%;
   opacity : 1;
 
-  position: fixed;
-  z-index: 1500;
-}
 
+  z-index: 9;
+
+
+}
 
 
 
@@ -394,20 +401,30 @@ div#script3{
     z-index: 2500;
   }
 */
+
+  div#script2{
+    font-size: 80px;
+    padding-top: 700px;
+    padding-left: 80px;
+  }
+
+
+
   .fade_off2 {
-    opacity : 0;
+    opacity : 0.2;
 
     transition:all 0.5s;
-    z-index: 1500;
   }
 
   .fade_off2.scrollin {
+    width: 100%;
     opacity : 1;
 
-    position: fixed;
-    z-index: 1500;
-  }
 
+    z-index: 9;
+
+
+  }
 
   div#script3{
     font-size: 80px;

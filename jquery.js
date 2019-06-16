@@ -25,7 +25,7 @@ if (window.matchMedia( "(max-width: 768px)" ).matches) {
         var imgPos = $(this).offset().top;
         var scroll = $(window).scrollTop();
         var windowHeight = $(window).height();
-        if (scroll > imgPos - windowHeight + 2600){
+        if (scroll > imgPos - windowHeight + 800){
           $(this).addClass("scrollin");
         } else {
           $(this).removeClass("fade_on");
@@ -40,7 +40,7 @@ if (window.matchMedia( "(max-width: 768px)" ).matches) {
         var imgPos = $(this).offset().top;
         var scroll = $(window).scrollTop();
         var windowHeight = $(window).height();
-        if (scroll > imgPos - windowHeight + 850){
+        if (scroll > imgPos - windowHeight + 900){
           $(this).addClass("scrollin");
         } else {
           $(this).removeClass("fade_on");
@@ -85,7 +85,7 @@ if (window.matchMedia( "(max-width: 768px)" ).matches) {
         var imgPos = $(this).offset().top;
         var scroll = $(window).scrollTop();
         var windowHeight = $(window).height();
-        if (scroll > imgPos - windowHeight + 2600){
+        if (scroll > imgPos - windowHeight + 1100){
           $(this).addClass("scrollin");
         } else {
           $(this).removeClass("fade_on");
@@ -100,7 +100,7 @@ if (window.matchMedia( "(max-width: 768px)" ).matches) {
         var imgPos = $(this).offset().top;
         var scroll = $(window).scrollTop();
         var windowHeight = $(window).height();
-        if (scroll > imgPos - windowHeight + 1300){
+        if (scroll > imgPos - windowHeight + 1200){
           $(this).addClass("scrollin");
         } else {
           $(this).removeClass("fade_on");
