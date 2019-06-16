@@ -22,9 +22,9 @@ html {
 }
 
 div#script1{
-  font-size: 30px;
-  padding-top: 1800px;
-  padding-left: 50px;
+  font-size: 80px;
+  padding-top: 800px;
+  padding-left: 80px;
 }
 
 
@@ -257,12 +257,10 @@ a#randomness:hover > .blink1 {
 
   }
   div#script1{
-    font-size: 30px;
-    padding-top: 1800px;
-    padding-left: 50px;
+    font-size: 80px;
+    padding-top: 800px;
+    padding-left: 80px;
   }
-
-
 
 
 
