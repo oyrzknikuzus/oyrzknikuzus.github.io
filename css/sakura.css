@@ -191,7 +191,7 @@ a#randomness:hover > .blink1 {
 
 
 .fade_off3 {
-  opacity : 0.5;
+  opacity : 0.2;
 
   transition:all 0.5s;
 }
@@ -405,7 +405,7 @@ a#randomness:hover > .blink1 {
 
 
   .fade_off3 {
-    opacity : 0.5;
+    opacity : 0.2;
 
     transition:all 0.5s;
   }
