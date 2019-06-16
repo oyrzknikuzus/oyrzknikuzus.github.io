@@ -37,7 +37,7 @@ $(function(){
       var imgPos = $(this).offset().top;
       var scroll = $(window).scrollTop();
       var windowHeight = $(window).height();
-      if (scroll > imgPos - windowHeight + 3000){
+      if (scroll > imgPos - windowHeight + 1700){
         $(this).addClass("scrollin");
       } else {
         $(this).removeClass("fade_on");
