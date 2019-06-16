@@ -221,7 +221,6 @@ div#script3{
   opacity : 1;
 
 
-  z-index: 9;
 
 
 }
@@ -413,27 +412,27 @@ div#script3{
   }
 
 
-div#script2{
-  font-size: 80px;
-  padding-top: 800px;
-  padding-left: 80px;
-}
+  div#script2{
+    font-size: 80px;
+    padding-top: 800px;
+    padding-left: 80px;
+  }
 
 
-.fade_off2 {
-  opacity : 0.2;
+  .fade_off2 {
+    opacity : 0.2;
 
-  transition:all 0.5s;
-}
+    transition:all 0.5s;
+  }
 
-.fade_off2.scrollin {
-  width: 100%;
-  opacity : 1;
+  .fade_off2.scrollin {
+    width: 100%;
+    opacity : 1;
 
-  z-index: 9;
+    z-index: 9;
 
 
-}
+  }
 
 
   div#script3{
