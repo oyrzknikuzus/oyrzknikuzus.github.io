@@ -21,6 +21,11 @@ html {
 
 }
 
+div#script1{
+  padding-top: 1800px;
+}
+
+
 div#random_circle{
   /*position: fixed;*/
   position: fixed;
@@ -193,7 +198,7 @@ a#randomness:hover > .blink1 {
   width: 100%;
   opacity : 1;
 
-  position: fixed;
+
   z-index: 9;
   margin-left: -13px;
   margin-top: -13px;
