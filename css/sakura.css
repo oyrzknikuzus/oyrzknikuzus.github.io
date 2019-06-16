@@ -22,7 +22,9 @@ html {
 }
 
 div#script1{
+  font-size: 30px;
   padding-top: 1800px;
+  padding-left: 50px;
 }
 
 
