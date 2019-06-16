@@ -254,7 +254,19 @@ a#randomness:hover > .blink1 {
     padding: 13px;
 
 
+
   }
+  div#script1{
+    font-size: 30px;
+    padding-top: 1800px;
+    padding-left: 50px;
+  }
+
+
+
+
+
+
   div#random_circle{
     /*position: fixed;*/
     position: fixed;
