@@ -176,7 +176,8 @@ a#randomness:hover > .blink1 {
 
 
 div#script2{
-  font-size: 80px;
+  font-family: 'HiraMinProN-W3','HiraMinPro-W6','HiraMinProN-W6';
+  font-size: 60px;
   padding-top: 790px;
   padding-left: 80px;
 }
