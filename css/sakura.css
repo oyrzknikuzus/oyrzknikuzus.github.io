@@ -201,7 +201,8 @@ div#script2{
 
 
 div#script3{
-  font-size: 80px;
+  font-family: 'HiraMinProN-W3','HiraMinPro-W6','HiraMinProN-W6';
+  font-size: 60px;
   padding-top: 50px;
   padding-left: 80px;
 }
