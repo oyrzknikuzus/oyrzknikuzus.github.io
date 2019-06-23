@@ -28,8 +28,8 @@ div#random_circle{
   /*position: fixed;*/
   position: fixed;
   z-index: 4600;
-  -webkit-animation: anime 1s;
-  animation: anime 1s;
+  -webkit-animation: anime 2s;
+  animation: anime 2s;
   animation-delay: 4s;
   animation-fill-mode: forwards;
 
