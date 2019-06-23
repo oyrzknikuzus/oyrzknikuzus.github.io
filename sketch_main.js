@@ -297,7 +297,7 @@ if (windowWidth <= windowSm) {
       p.keyTyped = function() {
         if (p.keyCode >= 32) {
           textTyped += p.key;
-          fontSizes.push(newFontSize);
+          p.fontSizes.push(newFontSize);
         } else if (p.keyCode == BACKSPACE || p.keyCode == DELETE) {
           if (textTyped.length > 0) {
             textTyped = textTyped.substring(0, p.max(0, textTyped.length - 1));
