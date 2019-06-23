@@ -226,7 +226,7 @@ if (windowWidth <= windowSm) {
 
 
       var textTyped = 'Type slow and fast!';
-      var fontSizes = [p.textTyped.length];
+      var fontSizes = [textTyped.length];
       var minFontSize = 15;
       var maxFontSize = 800;
       var newFontSize = 0;
@@ -240,7 +240,7 @@ if (windowWidth <= windowSm) {
 
       p.setup = function() {
         canvas = p.createCanvas(p.windowWidth, p.windowHeight);
-        canvas.position(0, 0);
+
         font = 'Arial';
 
 
@@ -258,7 +258,7 @@ if (windowWidth <= windowSm) {
         p.textAlign(LEFT);
         p.fill(0);
 
-        spacing = p.map(mouseY, 0, p.height, 0, 120);
+        spacing = p.map(p.mouseY, 0, p.height, 0, 120);
         p.translate(0, 200 + spacing);
 
         var x = 0;
