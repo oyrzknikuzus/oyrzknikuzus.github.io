@@ -230,7 +230,7 @@ if (windowWidth <= windowSm) {
 
         canvas.position(0, 0);
         //canvas.style('z-index', '-1');
-        //p.background(255, 255, 255, 240);
+        p.background(255, 255, 255, 240);
         //p.noLoop();
         p.randomSeed(0);
       };
@@ -332,7 +332,7 @@ if (windowWidth <= windowSm) {
 
     };
 
-    new p5(sketch1, "random_background");
+    //new p5(sketch1, "random_background");
     new p5(sketch2, "random_circle");
     //new p5(sketch3, "random_randomness");
 
