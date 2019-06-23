@@ -243,14 +243,14 @@ if (windowWidth <= windowSm) {
 
         p.fill(255, 10);
         p.noStroke();
-        p.strokeWeight(3);
+        p.strokeWeight(2);
 
         x = x + p.random(-15, 15);
         y = y + p.random(-15, 15);
 
 
         if (p.frameCount < 25) {
-          if ((p.frameCount % 4) == 0) {
+          if ((p.frameCount % 3) == 0) {
             p.noFill();
             p.stroke(p.random(255), p.random(255), 255);
             p.ellipse(x + p.random(-15, 15), y + p.random(-15, 15), r, r);
