@@ -173,7 +173,7 @@ if (windowWidth <= windowSm) {
 
 
     var sketch1 = function(p) {
-/*      var tileCount = 40;
+      var tileCount = 40;
       var actRandomSeed = 0;
       var actStrokeCap;
 
@@ -218,14 +218,12 @@ if (windowWidth <= windowSm) {
           }
         }
       };
-*/
 
 
 
 
 
-
-      var textTyped = 'Type slow and fast!';
+/*      var textTyped = 'Type slow and fast!';
       var fontSizes = [textTyped.length];
       var minFontSize = 15;
       var maxFontSize = 800;
@@ -310,7 +308,7 @@ if (windowWidth <= windowSm) {
         pMillis = p.millis();
       }
 
-
+*/
 
     };
 
@@ -427,7 +425,7 @@ if (windowWidth <= windowSm) {
 
     };
 
-    new p5(sketch1, "random_background");
+    //new p5(sketch1, "random_background");
     new p5(sketch2, "random_circle");
     //new p5(sketch3, "random_randomness");
 
