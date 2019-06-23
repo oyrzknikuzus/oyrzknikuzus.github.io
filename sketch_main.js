@@ -297,10 +297,10 @@ if (windowWidth <= windowSm) {
 
 
       p.keyTyped = function() {
-        if (keyCode >= 32) {
-          textTyped += key;
+        if (p.keyCode >= 32) {
+          textTyped += p.key;
           fontSizes.push(newFontSize);
-        } else if (keyCode == BACKSPACE || keyCode == DELETE) {
+        } else if (p.keyCode == BACKSPACE || p.keyCode == DELETE) {
           if (textTyped.length > 0) {
             textTyped = textTyped.substring(0, p.max(0, textTyped.length - 1));
             fontSizes.pop();
