@@ -74,7 +74,7 @@ function draw() {
 
 function keyTyped() {
   if (keyCode >= 32) {
-    textTyped += key;
+    textTyped = key;
     fontSizes.push(newFontSize);
   } else if (keyCode == BACKSPACE || keyCode == DELETE) {
     if (textTyped.length > 0) {
