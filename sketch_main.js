@@ -239,8 +239,8 @@ if (windowWidth <= windowSm) {
       var font;
 
       p.setup = function() {
-        p.createCanvas(windowWidth, windowHeight);
-
+        canvas = p.createCanvas(p.windowWidth, p.windowHeight);
+        canvas.position(0, 0);
         font = 'Arial';
 
 
