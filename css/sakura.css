@@ -37,10 +37,10 @@ div#random_circle{
 
 @-webkit-keyframes anime {
   0% {
-    opacity: 0;
+    opacity: 1;
   }
   100% {
-    opacity: 1;
+    opacity: 0;
     z-index: 0;
 
   }
@@ -321,7 +321,7 @@ div#script3{
   div#random_background{
     z-index: 3000;
     position: absolute;
-    
+
 
   }
 
