@@ -249,7 +249,7 @@ if (windowWidth <= windowSm) {
         y = y + p.random(-15, 15);
 
 
-        if (p.frameCount < 15) {
+        if (p.frameCount < 25) {
           if ((p.frameCount % 3) == 0) {
             p.noFill();
             p.stroke(p.random(255), p.random(255), 255);
@@ -259,14 +259,14 @@ if (windowWidth <= windowSm) {
 
 
 
-        if (p.frameCount >= 15  &&  p.frameCount < 40) {
+        if (p.frameCount >= 25  &&  p.frameCount < 60) {
           p.noFill();
           p.stroke(p.random(255), p.random(255), 255);
           p.ellipse(x + p.random(-15, 15), y + p.random(-15, 15), r, r);
         }
 
 
-
+/*
         if (p.frameCount >= 40 && p.frameCount < 60) {
           if ((p.frameCount % 2) == 0) {
             p.noFill();
@@ -275,7 +275,7 @@ if (windowWidth <= windowSm) {
           }
         }
 
-
+*/
 
 
       };
