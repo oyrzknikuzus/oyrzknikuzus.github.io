@@ -250,7 +250,7 @@ if (windowWidth <= windowSm) {
 
 
         if (p.frameCount < 15) {
-          if ((p.frameCount % 2) == 0) {
+          if ((p.frameCount % 3) == 0) {
             p.noFill();
             p.stroke(p.random(255), p.random(255), 255);
             p.ellipse(x + p.random(-15, 15), y + p.random(-15, 15), r, r);
