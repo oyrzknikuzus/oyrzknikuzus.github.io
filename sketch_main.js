@@ -249,23 +249,8 @@ if (windowWidth <= windowSm) {
         y = y + p.random(-15, 15);
 
 
-        //if (p.frameCount == 15) {
-          if ((p.frameCount % 15) == 0) {
-
-
-              p.noFill();
-              p.stroke(p.random(255), p.random(255), 255);
-              p.ellipse(x + p.random(-15, 15), y + p.random(-15, 15), r, r);
-
-
-          }
-        //}
-
-
-/*
-        if (p.frameCount >= 15  &&  p.frameCount < 40) {
-          for (i = 0; i < 1; i++ ){
-
+        if (p.frameCount < 15) {
+          if ((p.frameCount % 5) == 0) {
             p.noFill();
             p.stroke(p.random(255), p.random(255), 255);
             p.ellipse(x + p.random(-15, 15), y + p.random(-15, 15), r, r);
@@ -274,17 +259,22 @@ if (windowWidth <= windowSm) {
 
 
 
-        if (p.frameCount >= 40 && p.frameCount < 60) {
-          if (int(p.frameCount / 5) == 0) {
-            for (i = 0; i < 1; i++ ){
+        if (p.frameCount >= 15  &&  p.frameCount < 40) {
+          p.noFill();
+          p.stroke(p.random(255), p.random(255), 255);
+          p.ellipse(x + p.random(-15, 15), y + p.random(-15, 15), r, r);
+        }
 
-              p.noFill();
-              p.stroke(p.random(255), p.random(255), 255);
-              p.ellipse(x + p.random(-15, 15), y + p.random(-15, 15), r, r);
-            }
+
+
+        if (p.frameCount >= 40 && p.frameCount < 60) {
+          if (int(p.frameCount % 5) == 0) {
+            p.noFill();
+            p.stroke(p.random(255), p.random(255), 255);
+            p.ellipse(x + p.random(-15, 15), y + p.random(-15, 15), r, r);
           }
         }
-*/
+
 
 
 
