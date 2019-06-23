@@ -1,6 +1,6 @@
 
 
-var textTyped = 'Type slow and fast!';
+var textTyped = '';
 var fontSizes = [textTyped.length];
 var minFontSize = 15;
 var maxFontSize = 800;
@@ -15,7 +15,7 @@ var font;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  background('#252525');
+
 
   font = 'Arial';
 
@@ -30,9 +30,9 @@ function setup() {
 
 function draw() {
 
-  background(255);
+  background(0);
   textAlign(LEFT);
-  fill(0);
+  fill(255);
 
   spacing = map(mouseY, 0, height, 0, 120);
   translate(0, 200 + spacing);
