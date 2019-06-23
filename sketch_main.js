@@ -83,7 +83,7 @@ if (windowWidth <= windowSm) {
 
 
         if (p.frameCount < 25) {
-          if ((p.frameCount % 5) == 0) {
+          if ((p.frameCount % 4) == 0) {
             p.noFill();
             p.stroke(p.random(255), p.random(255), 255);
             p.ellipse(x + p.random(-1, 1), y + p.random(-1, 1), r, r);
