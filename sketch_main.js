@@ -12,11 +12,12 @@ if (windowWidth <= windowSm) {
       p.setup = function() {
         canvas = p.createCanvas(p.windowWidth, p.windowHeight);
         canvas.position(0, 0);
+        p.background('#252525');
         //canvas.style('z-index', '-1');
 
 
       };
-
+/*
       p.draw = function() {
         p.noLoop()
         p.frameRate(10);
@@ -49,6 +50,7 @@ if (windowWidth <= windowSm) {
           }
         }
       };
+*/
     };
 
 
@@ -179,11 +181,11 @@ if (windowWidth <= windowSm) {
         canvas = p.createCanvas(p.windowWidth, p.windowHeight);
         canvas.position(0, 0);
         //canvas.style('z-index', '-1');
-        //p.background('#222222');
+        p.background('#252525');
 
 
       };
-
+/*
       p.draw = function() {
         p.noLoop()
         p.frameRate(10);
@@ -216,6 +218,7 @@ if (windowWidth <= windowSm) {
           }
         }
       };
+*/
     };
 
 
