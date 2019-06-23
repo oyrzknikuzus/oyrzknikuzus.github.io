@@ -249,8 +249,8 @@ if (windowWidth <= windowSm) {
         y = y + p.random(-15, 15);
 
 
-        if (p.frameCount < 15) {
-          if (int(p.frameCount / 5) == 0) {
+        //if (p.frameCount < 15) {
+          //if (int(p.frameCount / 5) == 0) {
 
             for (i = 0; i < 1; i++ ){
 
@@ -259,11 +259,11 @@ if (windowWidth <= windowSm) {
               p.ellipse(x + p.random(-15, 15), y + p.random(-15, 15), r, r);
             }
 
-          }
-        }
+          //}
+        //}
 
 
-
+/*
         if (p.frameCount >= 15  &&  p.frameCount < 40) {
           for (i = 0; i < 1; i++ ){
 
@@ -285,8 +285,7 @@ if (windowWidth <= windowSm) {
             }
           }
         }
-
-
+*/
 
 
 
