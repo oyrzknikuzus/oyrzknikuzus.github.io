@@ -16,7 +16,6 @@ var font;
 function setup() {
   createCanvas(windowWidth, windowHeight);
 
-
   font = 'Arial';
 
 
