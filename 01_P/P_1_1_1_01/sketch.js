@@ -14,11 +14,11 @@ var tracking = 0; // between letters
 var font;
 
 function setup() {
-  createCanvas(800, 600);
+  createCanvas(windowWidth, windowHeight);
 
   font = 'Arial';
 
-  noCursor();
+
   noStroke();
 
   // init fontSizes
@@ -28,6 +28,7 @@ function setup() {
 }
 
 function draw() {
+
   background(255);
   textAlign(LEFT);
   fill(0);
