@@ -60,7 +60,7 @@ function draw() {
   }
 
   // blinking cursor after text
-  var timeDelta = millis() - pMillis;
+  var timeDelta = (millis() - pMillis) * 2;
   newFontSize = map(timeDelta, 0, maxTimeDelta, minFontSize, maxFontSize);
   newFontSize = min(newFontSize, maxFontSize);
 
@@ -69,10 +69,7 @@ function draw() {
   rect(x, y, newFontSize / 2, newFontSize / 20);
 }
 
-function keyReleased() {
-  // export png
-  if (keyCode == CONTROL) saveCanvas(gd.timestamp(), 'png');
-}
+
 
 function keyTyped() {
   if (keyCode >= 32) {
