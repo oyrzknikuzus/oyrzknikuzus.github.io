@@ -226,7 +226,7 @@ if (windowWidth <= windowSm) {
 
 
       var textTyped = 'Type slow and fast!';
-      var fontSizes = [textTyped.length];
+      var fontSizes = [p.textTyped.length];
       var minFontSize = 15;
       var maxFontSize = 800;
       var newFontSize = 0;
