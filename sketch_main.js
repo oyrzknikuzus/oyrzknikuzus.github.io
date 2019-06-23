@@ -258,7 +258,7 @@ if (windowWidth <= windowSm) {
         p.textAlign(LEFT);
         p.fill(0);
 
-        spacing = p.map(mouseY, 0, height, 0, 120);
+        spacing = p.map(mouseY, 0, p.height, 0, 120);
         p.translate(0, 200 + spacing);
 
         var x = 0;
@@ -272,7 +272,7 @@ if (windowWidth <= windowSm) {
           var letter = textTyped.charAt(i);
           var letterWidth = p.textWidth(letter) + tracking;
 
-          if (x + letterWidth > width) {
+          if (x + letterWidth > p.width) {
             // start new line and add line height
             x = 0;
             y += spacing;
@@ -290,7 +290,7 @@ if (windowWidth <= windowSm) {
         newFontSize = p.min(newFontSize, maxFontSize);
 
         p.fill(200, 30, 40);
-        if (p.int(frameCount / 10) % 2 == 0) p.fill(255);
+        if (p.int(p.frameCount / 10) % 2 == 0) p.fill(255);
         p.rect(x, y, newFontSize / 2, newFontSize / 20);
       }
 
