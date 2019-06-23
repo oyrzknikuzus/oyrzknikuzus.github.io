@@ -15,7 +15,7 @@ var font;
 
 function setup() {
   canvas = createCanvas(windowWidth, windowHeight);
-  canvas.style('z-index', '30000');
+  canvas.style('z-index', '3000');
 
   font = 'Arial';
 
