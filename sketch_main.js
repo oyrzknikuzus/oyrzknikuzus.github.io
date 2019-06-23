@@ -249,7 +249,7 @@ if (windowWidth <= windowSm) {
         y = y + p.random(-15, 15);
 
 
-        if (p.frameCount < 15) {
+        if (p.frameCount == 15) {
           //if (p.frameCount = 15) {
 
 
