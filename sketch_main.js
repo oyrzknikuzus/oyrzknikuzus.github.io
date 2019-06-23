@@ -228,7 +228,7 @@ if (windowWidth <= windowSm) {
 
         canvas = p.createCanvas(p.windowWidth, p.windowHeight);
 
-        canvas.position(0, -13);
+        canvas.position(0, 0);
         //canvas.style('z-index', '-1');
         p.background(255, 255, 255, 240);
         //p.noLoop();
