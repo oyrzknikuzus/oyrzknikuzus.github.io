@@ -239,24 +239,57 @@ if (windowWidth <= windowSm) {
         x = p.width / 2;
         y = p.height / 2;
         r = p.width / 4;
-        //if (int(frameCount / 10) % 2 == 0) {
-
-          p.fill(255, 10);
-          p.noStroke();
-          p.strokeWeight(p.random(0.5, 3));
-
-          x = x + p.random(-15, 15);
-          y = y + p.random(-15, 15);
 
 
+        p.fill(255, 10);
+        p.noStroke();
+        p.strokeWeight(p.random(0.5, 3));
+
+        x = x + p.random(-15, 15);
+        y = y + p.random(-15, 15);
+
+
+        if (p.frameCount < 15) {
+          if (int(p.frameCount / 5) == 0) {
+
+            for (i = 0; i < 1; i++ ){
+
+              p.noFill();
+              p.stroke(p.random(255), p.random(255), 255);
+              p.ellipse(x + p.random(-15, 15), y + p.random(-15, 15), r, r);
+            }
+
+          }
+        }
+
+
+
+        if (p.frameCount >= 15  &&  p.frameCount < 40) {
           for (i = 0; i < 1; i++ ){
 
             p.noFill();
             p.stroke(p.random(255), p.random(255), 255);
             p.ellipse(x + p.random(-15, 15), y + p.random(-15, 15), r, r);
           }
+        }
 
-        //}
+
+
+        if (p.frameCount >= 40 && p.frameCount < 60) {
+          if (int(p.frameCount / 5) == 0) {
+            for (i = 0; i < 1; i++ ){
+
+              p.noFill();
+              p.stroke(p.random(255), p.random(255), 255);
+              p.ellipse(x + p.random(-15, 15), y + p.random(-15, 15), r, r);
+            }
+          }
+        }
+
+
+
+
+
       };
 
 
