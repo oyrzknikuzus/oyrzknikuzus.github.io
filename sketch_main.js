@@ -78,13 +78,24 @@ if (windowWidth <= windowSm) {
         x = x + p.random(-10, 10);
         y = y + p.random(-10, 10);
 
-        for (i = 0; i < 1; i++ ){
 
+
+        if (p.frameCount < 25) {
+          if ((p.frameCount % 3) == 0) {
+            p.noFill();
+            p.stroke(p.random(255), p.random(255), 255);
+            p.ellipse(x + p.random(-1, 1), y + p.random(-1, 1), r, r);
+          }
+        }
+
+
+
+        if (p.frameCount >= 25  &&  p.frameCount < 90) {
           p.noFill();
           p.stroke(p.random(255), p.random(255), 255);
           p.ellipse(x + p.random(-1, 1), y + p.random(-1, 1), r, r);
-
         }
+
       };
 
 
