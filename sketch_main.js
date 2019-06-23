@@ -173,7 +173,7 @@ if (windowWidth <= windowSm) {
 
 
     var sketch1 = function(p) {
-/*      var tileCount = 40;
+     var tileCount = 40;
       var actRandomSeed = 0;
       var actStrokeCap;
 
@@ -219,11 +219,11 @@ if (windowWidth <= windowSm) {
         }
       };
 
-*/
 
 
 
-      var textTyped = 'Type slow and fast!';
+
+/*      var textTyped = 'Type slow and fast!';
       var fontSizes = [textTyped.length];
       var minFontSize = 15;
       var maxFontSize = 800;
@@ -308,7 +308,7 @@ if (windowWidth <= windowSm) {
         pMillis = p.millis();
       }
 
-
+*/
 
     };
 
@@ -323,7 +323,7 @@ if (windowWidth <= windowSm) {
 
         canvas.position(0, 0);
         //canvas.style('z-index', '-1');
-        p.background(255, 255, 255, 240);
+        p.background(255, 255, 255);
         //p.noLoop();
         p.randomSeed(0);
       };
