@@ -252,12 +252,11 @@ if (windowWidth <= windowSm) {
         //if (p.frameCount < 15) {
           //if (int(p.frameCount / 5) == 0) {
 
-            for (i = 0; i < 1; i++ ){
 
               p.noFill();
               p.stroke(p.random(255), p.random(255), 255);
               p.ellipse(x + p.random(-15, 15), y + p.random(-15, 15), r, r);
-            }
+            
 
           //}
         //}
