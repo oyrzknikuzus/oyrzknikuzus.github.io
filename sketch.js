@@ -1,6 +1,6 @@
 
 
-var textTyped = 'Type slow and fast!';
+var textTyped = 'Type something';
 var fontSizes = [textTyped.length];
 var minFontSize = 15;
 var maxFontSize = 800;
