@@ -249,8 +249,8 @@ if (windowWidth <= windowSm) {
         y = y + p.random(-15, 15);
 
 
-        //if (p.frameCount < 15) {
-          if (p.frameCount = 15) {
+        if (p.frameCount < 15) {
+          //if (p.frameCount = 15) {
 
 
               p.noFill();
@@ -258,8 +258,8 @@ if (windowWidth <= windowSm) {
               p.ellipse(x + p.random(-15, 15), y + p.random(-15, 15), r, r);
 
 
-          }
-        //}
+          //}
+        }
 
 
 /*
