@@ -32,7 +32,7 @@ function draw() {
 
   background(0);
   textAlign(LEFT);
-  fill(255);
+  fill(random(255));
 
   spacing = map(mouseY, 0, height, 0, 120);
   translate(0, 200 + spacing);
