@@ -243,7 +243,7 @@ if (windowWidth <= windowSm) {
 
         p.fill(255, 10);
         p.noStroke();
-        p.strokeWeight(p.random(0.5, 3));
+        p.strokeWeight(p.random(5));
 
         x = x + p.random(-15, 15);
         y = y + p.random(-15, 15);
