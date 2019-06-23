@@ -39,8 +39,11 @@ div#random_circle{
   0% {
     opacity: 1;
   }
-  100% {
+  90% {
     opacity: 0;
+  }
+  100% {
+
     z-index: 0;
 
   }
@@ -50,10 +53,14 @@ div#random_circle{
   0% {
     opacity: 1;
   }
-  100% {
-    opacity: 0;
-    z-index: 0;
 
+  90% {
+    opacity: 0;
+  }
+
+  100% {
+
+    z-index: 0;
   }
 }
 
@@ -285,7 +292,6 @@ div#script3{
     position: fixed;
     z-index: 4600;
     -webkit-animation: anime 4s;
-
     animation: anime 4s;
     animation-delay: 4s;
     animation-fill-mode: forwards;
@@ -298,6 +304,7 @@ div#script3{
     }
     100% {
       opacity: 0;
+      z-index: 0;
 
     }
   }
@@ -308,7 +315,8 @@ div#script3{
     }
     100% {
       opacity: 0;
-      
+      z-index: 0;
+
     }
   }
 
