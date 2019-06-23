@@ -298,7 +298,6 @@ div#script3{
     }
     100% {
       opacity: 0;
-      z-index: 0;
 
     }
   }
@@ -309,8 +308,7 @@ div#script3{
     }
     100% {
       opacity: 0;
-      z-index: 0;
-
+      
     }
   }
 
