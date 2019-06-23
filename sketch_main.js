@@ -250,7 +250,7 @@ if (windowWidth <= windowSm) {
 
 
         //if (p.frameCount == 15) {
-          if ((p.frameCount / 15) == 0) {
+          if ((p.frameCount % 15) == 0) {
 
 
               p.noFill();
