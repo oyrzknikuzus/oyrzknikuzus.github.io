@@ -76,7 +76,7 @@ function keyTyped() {
   if (keyCode >= 32) {
     textTyped += key;
     fontSizes.push(newFontSize);
-  } else if (keyCode == BACKSPACE || keyCode == DELETE) {
+  } else if (keyCode == Enter || keyCode == DELETE) {
     if (textTyped.length > 0) {
       textTyped = textTyped.substring(0, max(0, textTyped.length - 1));
       fontSizes.pop();
