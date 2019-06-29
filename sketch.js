@@ -34,7 +34,7 @@ function draw() {
   textAlign(LEFT);
   fill(255);
 
-  spacing = map(mouseY, 0, height, 0, 120);
+  spacing = map(mouseY, windowWidth/2, height, 0, 120);
   translate(0, 200 + spacing);
 
   var x = 0;
