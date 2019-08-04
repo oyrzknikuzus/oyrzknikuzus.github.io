@@ -574,7 +574,7 @@ div#script4{
   a#scroll {
     position: absolute;
     bottom: 40px;
-    left: 49%;
+    left: 40%;
     z-index: 2;
     display: inline-block;
     -webkit-transform: translate(0, -50%);
