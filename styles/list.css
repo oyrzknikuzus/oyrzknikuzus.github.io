@@ -10,7 +10,7 @@ body {
 
 section {
 	padding-top: 1000px;
-  max-width: 80%;
+  max-width: 100%;
   margin: auto;
   overflow: hidden;
 
@@ -24,9 +24,9 @@ nav {
 
 .sketch {
 	display: inline-flex;
-	flex-direction: column;
-	background-color: #EFFAEE;
-	flex-basis: calc(50% - 1em);
+	/*flex-direction: column;
+	background-color: #EFFAEE;*/
+	flex-basis: calc(25% - 1em);
 	/*padding: 1em 1em 0 1em;
 	margin-bottom: 1em;
 	margin-right: 1em;*/
@@ -53,7 +53,7 @@ h3 {
 	background-color: #000000;
 	color: #fff;
 	margin-top: 0;
-	padding: 0 1em;
+	padding: 0 0;
 	line-height: 1.8em;
 	font-size: 1em;
 }
