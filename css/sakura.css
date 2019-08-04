@@ -40,8 +40,8 @@ div#random_circle{
     opacity: 1;
   }
   100% {
-    opacity: 1;
-    /*　z-index: 0;　*/
+    opacity: 0;
+    z-index: 0;
 
 
   }
@@ -52,8 +52,8 @@ div#random_circle{
     opacity: 1;
   }
   100% {
-    opacity: 1;
-    /* z-index: 0; */
+    opacity: 0;
+    z-index: 0;
   }
 }
 
@@ -297,8 +297,8 @@ div#script3{
       opacity: 1;
     }
     100% {
-      opacity: 1;
-      /* z-index: 0; */
+      opacity: 0;
+      z-index: 0;
 
     }
   }
@@ -308,8 +308,8 @@ div#script3{
       opacity: 1;
     }
     100% {
-      opacity: 1;
-      /* z-index: 0; */
+      opacity: 0;
+      z-index: 0;
 
     }
   }
