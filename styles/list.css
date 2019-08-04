@@ -117,7 +117,7 @@ a {
 		display: inline-flex;
 		/*flex-direction: column;
 		background-color: #EFFAEE;*/
-		flex-basis: calc(50% - 1em);
+		flex-basis: calc(100% - 1em);
 		/*padding: 1em 1em 0 1em;
 		margin-bottom: 1em;
 		margin-right: 1em;*/
