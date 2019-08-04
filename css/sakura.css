@@ -574,7 +574,7 @@ div#script4{
   a#scroll {
     position: absolute;
     bottom: 40px;
-    left: 20%;
+    left: 450%;
     z-index: 2;
     display: inline-block;
     -webkit-transform: translate(0, -50%);
@@ -585,7 +585,7 @@ div#script4{
   a#scroll span {
     position: absolute;
     top: 0;
-    left: 20%;
+    left: 50%;
     width: 24px;
     height: 24px;
     margin-left: -12px;
@@ -623,3 +623,4 @@ div#script4{
       opacity: 0;
     }
   }
+}
