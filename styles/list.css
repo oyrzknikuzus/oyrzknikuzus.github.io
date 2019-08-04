@@ -26,7 +26,7 @@ section {
 	display: inline-flex;
 	/*flex-direction: column;
 	background-color: #EFFAEE;*/
-	flex-basis: calc(25% - 1em);
+	flex-basis: calc(25%);
 	/*padding: 1em 1em 0 1em;
 	margin-bottom: 1em;
 	margin-right: 1em;*/
@@ -117,7 +117,7 @@ a {
 		display: inline-flex;
 		/*flex-direction: column;
 		background-color: #EFFAEE;*/
-		flex-basis: calc(100% - 1em);
+		flex-basis: calc(100%);
 		/*padding: 1em 1em 0 1em;
 		margin-bottom: 1em;
 		margin-right: 1em;*/
