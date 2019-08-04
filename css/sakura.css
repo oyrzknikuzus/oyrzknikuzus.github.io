@@ -180,6 +180,8 @@ div#script2{
   text-align: center;
   padding-top: 1200px;
   /*padding-left: 80px;*/
+  width: 60%;
+  margin: 0 auto;
 
 
 }
@@ -207,6 +209,8 @@ div#script3{
   font-size: 25px;
   text-align: center;
   padding-top: 50px;
+  width: 60%;
+  margin: 0 auto;
 
 }
 
@@ -292,7 +296,7 @@ div#script4{
     margin: auto;
     color: #4a4a4a;
     background-color: #505050;
-    S
+
   }
 
 
@@ -445,6 +449,8 @@ div#script4{
     font-size: 15px;
     text-align: center;
     padding-top: 790px;
+    width: 60%;
+    margin: 0 auto;
 
   }
 
@@ -470,6 +476,8 @@ div#script4{
     font-size: 15px;
     text-align: center;
     padding-top: 50px;
+    width: 60%;
+    margin: 0 auto;
 
   }
 
