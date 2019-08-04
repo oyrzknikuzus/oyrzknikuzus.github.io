@@ -14,7 +14,7 @@ var tracking = 0; // between letters
 var font;
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  canvas = createCanvas(windowWidth, windowHeight);
   canvas.position(0, 0);
 
   font = 'Arial';
