@@ -574,7 +574,7 @@ div#script4{
 
 
 
-  a#scroll {
+  .black_background a#scroll {
     position: absolute;
     bottom: 40px;
     left: 40%;
@@ -585,7 +585,7 @@ div#script4{
     text-decoration: none;
   }
 
-  a#scroll span {
+  .black_background a#scroll span {
     position: absolute;
     top: 0;
     left: 50%;
