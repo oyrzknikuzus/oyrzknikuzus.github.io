@@ -252,7 +252,7 @@ div#script4{
 
 .black_background a#scroll {
   position: absolute;
-  bottom: 40px;
+  bottom: 50px;
   left: 49%;
   z-index: 2;
   display: inline-block;
