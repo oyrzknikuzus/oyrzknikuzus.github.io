@@ -26,7 +26,7 @@ html {
 
 div#random_circle{
 
-  position: fixed;
+  position: absolute;
   z-index: 4600;
   -webkit-animation: anime 4s;
   animation: anime 4s;
