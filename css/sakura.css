@@ -577,7 +577,7 @@ div#script4{
   .black_background a#scroll {
     position: absolute;
     bottom: 40px;
-    left: 40%;
+    left: 45%;
     z-index: 2;
     display: inline-block;
     -webkit-transform: translate(0, -50%);
