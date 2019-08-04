@@ -480,6 +480,24 @@ div#script4{
     }
 
 
+
+
+    /*
+      .fade_off1 {
+        opacity : 1;
+
+        transition:all 3.0s;
+        z-index: 2500;
+      }
+
+      .fade_off1.scrollin {
+        opacity: 0;
+
+        position: fixed;
+        z-index: 2500;
+      }
+    */
+
     div#script2{
       font-size: 15px;
       text-align: left;
@@ -609,23 +627,3 @@ div#script4{
       }
     }
   }
-
-
-
-
-
-/*
-  .fade_off1 {
-    opacity : 1;
-
-    transition:all 3.0s;
-    z-index: 2500;
-  }
-
-  .fade_off1.scrollin {
-    opacity: 0;
-
-    position: fixed;
-    z-index: 2500;
-  }
-*/
