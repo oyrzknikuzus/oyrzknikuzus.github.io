@@ -31,7 +31,7 @@ function draw() {
       }
 
       if (toggle == 1) {
-        strokeWeight(mouseY / 20);
+        strokeWeight(mouseY / 40);
         line(posX, posY + height / tileCount, posX + width / tileCount, posY);
       }
 
