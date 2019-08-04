@@ -179,7 +179,7 @@ div#script2{
   font-family: 'HiraMinProN-W3','HiraMinPro-W6','HiraMinProN-W6';
   font-size: 25px;
   text-align: center;
-  padding-top: 790px;
+  padding-top: 900px;
   /*padding-left: 80px;*/
 }
 
@@ -424,7 +424,7 @@ div#script3{
 */
 
   div#script2{
-    font-size: 30px;
+    font-size: 10px;
     text-align: center;
     padding-top: 790px;
 
@@ -449,7 +449,7 @@ div#script3{
   }
 
   div#script3{
-    font-size: 30px;
+    font-size: 10px;
     text-align: center;
     padding-top: 50px;
 
