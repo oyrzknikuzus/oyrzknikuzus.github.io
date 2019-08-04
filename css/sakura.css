@@ -230,14 +230,14 @@ div#script3{
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #000000;
+  background: #ffffff;
   z-index: 1050;
   display: table;
 }
 
 div#script4{
   display: table-cell;
-  color: #fff;
+  color: #000;
   font-size: 50px;
   vertical-align: middle;
   text-align: center;
@@ -495,14 +495,14 @@ div#script4{
     position: absolute;
     width: 100%;
     height: 100%;
-    background: #000000;
+    background: #ffffff;
     z-index: 1050;
     display: table;
   }
 
   div#script4{
     display: table-cell;
-    color: #fff;
+    color: #000;
     font-size: 40px;
     vertical-align: middle;
     text-align: center;
