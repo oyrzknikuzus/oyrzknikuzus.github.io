@@ -282,7 +282,6 @@ div#script3{
 
   div#random_circle{
     position: absolute;
-    position: fixed;
     z-index: 4600;
     -webkit-animation: anime 4s;
     animation: anime 4s;
