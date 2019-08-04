@@ -287,17 +287,18 @@ div#script4{
     font-family: serif;
     color: #4a4a4a; }
 
-  body {
+  .mybody {
     font-size: 2.4rem;
     line-height: 1.618;
     margin: auto;
     color: #4a4a4a;
     background-color: #505050;
     padding: 13px;
-
-
-
   }
+
+
+
+
 
 
   div#random_circle{
@@ -494,7 +495,7 @@ div#script4{
 
 
   .black_background{
-    position: static;
+    position: absolute;
     width: 100%;
     height: 100%;
     background: #ffffff;
