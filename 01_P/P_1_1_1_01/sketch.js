@@ -1,6 +1,6 @@
 
 
-var textTyped = 'Type slow and fast!';
+var textTyped = '';
 var fontSizes = [textTyped.length];
 var minFontSize = 15;
 var maxFontSize = 800;
@@ -65,8 +65,8 @@ function draw() {
   newFontSize = map(timeDelta, 0, maxTimeDelta, minFontSize, maxFontSize);
   newFontSize = min(newFontSize, maxFontSize);
 
-  fill(200, 30, 40);
-  if (int(frameCount / 10) % 2 == 0) fill(255);
+  fill(0);
+  if (int(frameCount / 10) % 2 == 0) fill(0);
   rect(x, y, newFontSize / 2, newFontSize / 20);
 }
 
