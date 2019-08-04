@@ -177,9 +177,10 @@ a#randomness:hover > .blink1 {
 
 div#script2{
   font-family: 'HiraMinProN-W3','HiraMinPro-W6','HiraMinProN-W6';
-  font-size: 100px;
+  font-size: 25px;
+  text-align: center;
   padding-top: 790px;
-  padding-left: 80px;
+  /*padding-left: 80px;*/
 }
 
 .fade_off2 {
@@ -202,9 +203,10 @@ div#script2{
 
 div#script3{
   font-family: 'HiraMinProN-W3','HiraMinPro-W6','HiraMinProN-W6';
-  font-size: 100px;
+  font-size: 25px;
+  text-align: center;
   padding-top: 50px;
-  padding-left: 80px;
+
 }
 
 
@@ -422,9 +424,10 @@ div#script3{
 */
 
   div#script2{
-    font-size: 80px;
+    font-size: 30px;
+    text-align: center;
     padding-top: 790px;
-    padding-left: 80px;
+
   }
 
 
@@ -446,9 +449,10 @@ div#script3{
   }
 
   div#script3{
-    font-size: 80px;
+    font-size: 30px;
+    text-align: center;
     padding-top: 50px;
-    padding-left: 80px;
+
   }
 
 
