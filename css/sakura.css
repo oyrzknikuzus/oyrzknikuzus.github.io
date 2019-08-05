@@ -258,14 +258,14 @@ div#script_musakui{
   text-align: center;
 
 
-  -webkit-animation: anime 2s;
-  animation: anime 2s;
+  -webkit-animation: musakui 2s;
+  animation: musakui 2s;
   animation-delay: 8s;
   animation-fill-mode: forwards;
 
   }
 
-  @-webkit-keyframes anime {
+  @-webkit-keyframes musakui {
   0% {
     opacity: 0;
   }
@@ -277,7 +277,7 @@ div#script_musakui{
   }
   }
 
-  @keyframes anime {
+  @keyframes musakui {
   0% {
     opacity: 0;
   }
