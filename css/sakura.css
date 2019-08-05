@@ -203,6 +203,7 @@ div#script2{
 }
 
 div#script4{
+  font-family: "Nachin", serif;
   font-size: 30px;
   text-align: left;
   padding-top: 1400px;
@@ -213,7 +214,7 @@ div#script4{
 
 
 div#script3{
-  font-family: 'HiraMinProN-W3','HiraMinPro-W6','HiraMinProN-W6';
+  font-family: "Nachin", serif;
   font-size: 25px;
   text-align: left;
   padding-top: 20px;
@@ -535,6 +536,7 @@ div#script_musakui{
   }
 
   div#script4{
+    font-family: "Nachin", serif;
     font-size: 22px;
     text-align: left;
     padding-top: 900px;
@@ -545,6 +547,7 @@ div#script_musakui{
 
 
   div#script3{
+    font-family: "Nachin", serif;
     font-size: 18px;
     text-align: left;
     padding-top: 10px;
