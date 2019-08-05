@@ -257,7 +257,36 @@ div#script_musakui{
   vertical-align: middle;
   text-align: center;
 
+
+  -webkit-animation: anime 2s;
+  animation: anime 2s;
+  animation-delay: 8s;
+  animation-fill-mode: forwards;
+
+  }
+
+  @-webkit-keyframes anime {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    /*z-index: 0;*/
+
+
+  }
+  }
+
+  @keyframes anime {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    /*z-index: 0;*/
+  }
 }
+
 
 
 .black_background a#scroll {
