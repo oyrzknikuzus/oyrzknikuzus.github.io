@@ -202,13 +202,21 @@ div#script2{
 
 }
 
+div#script4{
+  font-size: 30px;
+  text-align: left;
+  padding-top: 1400px;
+  width: 60%;
+  margin: 0 auto;
+
+}
 
 
 div#script3{
   font-family: 'HiraMinProN-W3','HiraMinPro-W6','HiraMinProN-W6';
   font-size: 25px;
   text-align: left;
-  padding-top: 1400px;
+  padding-top: 20px;
   width: 60%;
   margin: 0 auto;
 
@@ -240,7 +248,7 @@ div#script3{
   display: table;
 }
 
-div#script4{
+div#script_musakui{
   font-family: "Nachin", serif;
   display: table-cell;
   color: #000;
@@ -526,10 +534,20 @@ div#script4{
 
   }
 
+  div#script4{
+    font-size: 22px;
+    text-align: left;
+    padding-top: 900px;
+    width: 70%;
+    margin: 0 auto;
+
+  }
+
+
   div#script3{
     font-size: 18px;
     text-align: left;
-    padding-top: 900px;
+    padding-top: 10px;
     width: 70%;
     margin: 0 auto;
 
@@ -564,7 +582,8 @@ div#script4{
     display: table;
   }
 
-  div#script4{
+
+  div#script_musakui{
     font-family: "Nachin", serif;
     display: table-cell;
     color: #000;
