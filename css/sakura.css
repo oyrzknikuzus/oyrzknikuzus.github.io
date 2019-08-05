@@ -241,6 +241,7 @@ div#script3{
 }
 
 div#script4{
+  font-family: "Nachin", serif;
   display: table-cell;
   color: #000;
   font-size: 50px;
@@ -526,10 +527,10 @@ div#script4{
   }
 
   div#script3{
-    font-size: 15px;
+    font-size: 18px;
     text-align: left;
     padding-top: 900px;
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
 
   }
@@ -564,6 +565,7 @@ div#script4{
   }
 
   div#script4{
+    font-family: "Nachin", serif;
     display: table-cell;
     color: #000;
     font-size: 40px;
