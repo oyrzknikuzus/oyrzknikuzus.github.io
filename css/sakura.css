@@ -106,9 +106,11 @@ a#randomness:hover {
 
 a#randomness:hover > span {
 	opacity: 0.5;
+  color: #000;
 }
 a#randomness:hover > span:hover {
   opacity: 1.0;
+  color: #000;
   animation: blink 0.1s step-end infinite;
   -webkit-animation: blink 0.1s step-end infinite;
 }
