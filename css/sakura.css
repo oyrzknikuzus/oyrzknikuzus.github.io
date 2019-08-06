@@ -22,9 +22,17 @@ html {
 
 div.navbar-inverse{
   background-color: #fff;
-  border-color: #999;
+  border-color: #fff;
 }
 
+div.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+    color: #fff;
+    background-color: #fff;
+}
+
+div.navbar-inverse .navbar-nav > li > a {
+    color: #000;
+}
 
 div#random_circle{
 
