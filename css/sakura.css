@@ -16,9 +16,9 @@ html {
   margin: auto;
   color: #4a4a4a;
   background-color: #505050;
-
-
 }
+
+
 
 div.navbar-inverse{
   background-color: #fff;
@@ -44,6 +44,18 @@ div.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li 
     color: #999;
 
 }
+
+.icon::before {
+  display: inline-block;
+  margin-right: .5em;
+  font-family: fontawesome;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+
 
 div#random_circle{
 
