@@ -45,10 +45,12 @@ div.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li 
 
 }
 
-.icon::before {
-  display: inline-block;
-  margin-right: .5em;
+.github-icon::before {
+  color: #000;
   font-family: fontawesome;
+  content: "\f09b";
+  margin-right: .5em;
+  display: inline-block;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
