@@ -273,6 +273,19 @@ div#script3{
   display: table;
 }
 
+
+.black_background img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+	margin: auto;
+}
+
 div#script_musakui{
   font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
   display: table-cell;
