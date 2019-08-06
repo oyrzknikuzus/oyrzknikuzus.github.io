@@ -54,8 +54,24 @@ div.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-
+.twitter-icon::before {
+  color: #000;
+  font-family: fontawesome;
+  content: "\f099";
+  margin-right: .5em;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.facebook-icon::before {
+  color: #000;
+  font-family: fontawesome;
+  content: "\f082";
+  margin-right: .5em;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
 
 
