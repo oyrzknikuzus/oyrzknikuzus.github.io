@@ -26,7 +26,7 @@ div.navbar-inverse{
 }
 
 div.navbar-inverse ul.navbar-nav > li.active > a, div.navbar-inverse ul.navbar-nav > li.active > a:hover, div.navbar-inverse ul.navbar-nav > li.active > a:focus {
-    color: #999;
+    color: #000;
     background-color: #fff;
 }
 
