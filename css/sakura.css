@@ -20,7 +20,7 @@ html {
 
 }
 
-.navbar-inverse{
+div.navbar-inverse{
   background-color: #fff;
   border-color: #999;
 }
