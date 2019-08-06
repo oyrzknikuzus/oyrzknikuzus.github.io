@@ -410,7 +410,29 @@ div#script_musakui{
 
   }
 
+  div.navbar-inverse{
+    background-color: #fff;
+    border-color: #fff;
+  }
 
+  div.navbar-inverse ul.navbar-nav > li.active > a {
+    color: #000;
+    background-color: #fff;
+  }
+  div.navbar-inverse ul.navbar-nav > li.active > a:hover, div.navbar-inverse ul.navbar-nav > li.active > a:focus {
+    color: #999;
+    background-color: #fff;
+  }
+
+
+  div.navbar-inverse .navbar-nav > li > a {
+      color: #000;
+  }
+
+  div.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+      color: #999;
+
+  }
 
 
 
