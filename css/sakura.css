@@ -20,7 +20,10 @@ html {
 
 }
 
-
+.navbar-inverse{
+  background-color: #fff;
+  border-color: #999;
+}
 
 
 div#random_circle{
