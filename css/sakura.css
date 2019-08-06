@@ -402,7 +402,8 @@ div#script_musakui{
   html {
     font-size: 62.5%;
     font-family: serif;
-    color: #4a4a4a; }
+    color: #4a4a4a;
+  }
 
   .mybody {
     font-size: 2.4rem;
@@ -416,6 +417,7 @@ div#script_musakui{
   div.navbar-inverse{
     background-color: #fff;
     border-color: #fff;
+    opacity: 0.7;
   }
 
   div.navbar-inverse ul.navbar-nav > li.active > a {
