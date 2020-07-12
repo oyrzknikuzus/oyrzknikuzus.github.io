@@ -575,6 +575,7 @@ div#script_musakui{
     }
     100% {
       opacity: 0;
+      display: none;
       /*z-index: 0;*/
 
     }
@@ -586,6 +587,7 @@ div#script_musakui{
     }
     100% {
       opacity: 0;
+      display: none;
       /*z-index: 0;*/
 
     }
