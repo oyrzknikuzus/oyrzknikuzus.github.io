@@ -360,6 +360,7 @@ div#script_musakui{
 .black_background a#scroll {
   position: absolute;
   bottom: 50px;
+  color: #ff0000;
   left: 49%;
   z-index: 2;
   display: inline-block;
