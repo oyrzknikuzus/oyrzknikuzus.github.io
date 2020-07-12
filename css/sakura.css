@@ -421,10 +421,13 @@ div#script_musakui{
 
 .memolist {
   position: relative;
-  margin-top: 100px;
+  padding-top: 1500px;
+  padding-left: 70px;
 }
 
-
+.memolist ul{
+  list-style: none;
+}
 
 
 
