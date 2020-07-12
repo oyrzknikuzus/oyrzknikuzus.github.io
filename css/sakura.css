@@ -892,7 +892,7 @@ div#script_musakui{
 
   .memolist ul{
     width: 290px;
-    padding-right: 15px;
+    padding-left: 15px;
     list-style: none;
     padding-left: 0px;
   }
