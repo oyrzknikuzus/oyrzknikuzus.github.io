@@ -435,7 +435,10 @@ div#script_musakui{
 }
 
 
-
+.memolist a{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #999999;
+}
 
 
 
