@@ -419,8 +419,9 @@ div#script_musakui{
 
 
 
-div.memolist {
-    padding-top: : 1000px;
+div#memolist {
+  position: relative;
+  padding-top: : 1000px;
 }
 
 
