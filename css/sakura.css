@@ -52,7 +52,7 @@ div.container {
 
 
 .github-icon::before {
-  color: #000;
+  color: #999999;
   font-family: fontawesome;
   content: "\f09b";
   margin-right: .5em;
@@ -61,7 +61,7 @@ div.container {
   -moz-osx-font-smoothing: grayscale;
 }
 .twitter-icon::before {
-  color: #000;
+  color: #999999;
   font-family: fontawesome;
   content: "\f099";
   margin-right: .5em;
@@ -70,7 +70,7 @@ div.container {
   -moz-osx-font-smoothing: grayscale;
 }
 .facebook-icon::before {
-  color: #000;
+  color: #999999;
   font-family: fontawesome;
   content: "\f082";
   margin-right: .5em;
