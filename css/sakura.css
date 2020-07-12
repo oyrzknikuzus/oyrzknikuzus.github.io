@@ -442,7 +442,10 @@ div#script_musakui{
 }
 
 
-
+.navbar-nav {
+    float: right;
+    margin: 0;
+}
 
 
 
