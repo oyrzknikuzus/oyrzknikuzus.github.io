@@ -483,6 +483,10 @@ div#script_musakui{
 
   }
 
+  .navbar-inverse .navbar-toggle {
+    border-color: white;
+}
+
   .github-icon::before {
     color: #000;
     font-family: fontawesome;
