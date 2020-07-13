@@ -881,8 +881,8 @@ div#script_musakui{
   }
 
   .memolist {
-    position: relative;
-    width: 479px;
+    position: absolute;
+    width: 375px;
     padding-top: 60px;
     padding-right: 15px;
     padding-left: 15px;
