@@ -92,7 +92,11 @@
       letter-spacing: 0.22em;
       text-transform: uppercase;
       color: var(--muted);
-      margin-bottom: 20px;
+      margin-top: 0;
+    }
+    .hero-name {
+      color: var(--accent);
+      font-weight: 700;
     }
     .hero-title {
       font-family: var(--font-mono);
@@ -101,15 +105,9 @@
       line-height: 1.08;
       letter-spacing: -0.02em;
       color: var(--text);
-      margin-bottom: 28px;
+      margin-bottom: 16px;
     }
     .hero-title .accent { color: var(--accent); }
-    .hero-desc {
-      font-size: 15px;
-      color: var(--muted2);
-      max-width: 460px;
-      line-height: 1.85;
-    }
 
     /* ── SEED INFO ── */
     .seed-info {
@@ -265,11 +263,10 @@
 
 <main>
   <header class="hero">
-    <p class="hero-label">Generative Design Portfolio</p>
     <h1 class="hero-title">
       Order through<br><span class="accent">randomness.</span>
     </h1>
-    <p class="hero-desc">Works by Ryo.S</p>
+    <p class="hero-label">Generative Design Portfolio — <span class="hero-name">Works by Ryo.S</span></p>
     <div class="seed-info" id="seed-info"></div>
   </header>
 
