@@ -1,219 +1,544 @@
 <!DOCTYPE html>
-<html>
 <html lang="en">
 <head>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-
-
-  <script src="https://kit.fontawesome.com/63512bf1a6.js"></script>
-
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>w/ randomness</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg:         #111213;
+      --surface:    #181a1b;
+      --surface2:   #1e2022;
+      --border:     #262829;
+      --text:       #c8cacc;
+      --muted:      #4a4d50;
+      --muted2:     #6a6e72;
+      --accent:     #8eb4c8;   /* muted steel blue */
+      --accent-dim: rgba(142,180,200,0.07);
+      --font-mono:  'Space Mono', monospace;
+      --font-sans:  'Space Grotesk', sans-serif;
+    }
 
-<!--ファイル読み込み-->
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: 16px; scroll-behavior: smooth; }
 
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font-sans);
+      font-weight: 300;
+      min-height: 100vh;
+      line-height: 1.6;
+    }
 
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css" type="text/css" />
-  <link rel="stylesheet" href="css/sakura.css" type="text/css" />
-  <link rel="stylesheet" href="css/style.css" type="text/css" />
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 40px;
+      border-bottom: 1px solid var(--border);
+      background: rgba(17,18,19,0.94);
+      backdrop-filter: blur(14px);
+    }
+    .nav-logo {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      letter-spacing: 0.14em;
+      color: var(--text);
+      text-decoration: none;
+      opacity: .7;
+    }
+    .nav-logo:hover { opacity: 1; }
+    .nav-links { display: flex; gap: 28px; list-style: none; }
+    .nav-links a {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color .2s;
+    }
+    .nav-links a:hover { color: var(--text); }
 
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:600" rel="stylesheet">
-	<link href="styles/list.css" rel="stylesheet" type="text/css">
+    /* ── HERO ── */
+    .hero {
+      padding: 148px 48px 64px;
+      max-width: 860px;
+    }
+    .hero-label {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+    .hero-title {
+      font-family: var(--font-mono);
+      font-size: clamp(32px, 5.5vw, 62px);
+      font-weight: 700;
+      line-height: 1.08;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      margin-bottom: 28px;
+    }
+    .hero-title .accent { color: var(--accent); }
+    .hero-desc {
+      font-size: 15px;
+      color: var(--muted2);
+      max-width: 460px;
+      line-height: 1.85;
+    }
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="jquery.js"></script>
+    /* ── TAGS ── */
+    .tags-section { padding: 0 48px 72px; }
+    .tags-label {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 14px;
+    }
+    .tags { display: flex; flex-wrap: wrap; gap: 7px; }
+    .tag {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      border: 1px solid var(--border);
+      padding: 4px 11px;
+      border-radius: 2px;
+      transition: all .2s;
+    }
+    .tag:hover {
+      color: var(--accent);
+      border-color: var(--accent);
+      background: var(--accent-dim);
+      cursor: default;
+    }
 
+    /* ── SECTION HEADER ── */
+    .section-header {
+      display: flex;
+      align-items: baseline;
+      gap: 14px;
+      padding: 0 48px;
+      margin-bottom: 28px;
+    }
+    .section-letter {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    .section-name {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .section-line { flex: 1; height: 1px; background: var(--border); }
 
-  <script src="libraries/p5.min.js"></script>
-  <script src="libraries/p5.dom.min.js"></script>
+    /* ── GRID ── */
+    .works-section { padding: 0 48px 72px; }
+    .works-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+    }
+    .work-card {
+      background: var(--bg);
+      padding: 24px;
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      transition: background .2s;
+      position: relative;
+      overflow: hidden;
+    }
+    .work-card::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border: 1px solid transparent;
+      transition: border-color .2s;
+      pointer-events: none;
+    }
+    .work-card:hover { background: var(--surface); }
+    .work-card:hover::after { border-color: var(--accent); }
 
-  <!--<script src="sketch_2.js"></script>
-  <script src="sketch.js"></script>-->
-  <script src="sketch_main.js"></script>
-  <!--<script src="sketch.js"></script>-->
+    .work-card-top { display: flex; justify-content: space-between; align-items: flex-start; }
+    .work-id {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 0.14em;
+      color: var(--accent);
+    }
+    .work-arrow {
+      font-size: 13px;
+      color: var(--muted);
+      transition: color .2s, transform .2s;
+    }
+    .work-card:hover .work-arrow { color: var(--accent); transform: translate(2px,-2px); }
 
+    .work-preview {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      overflow: hidden;
+    }
+    .work-preview canvas { width: 100%; height: 100%; display: block; }
 
+    .work-info { display: flex; flex-direction: column; gap: 5px; }
+    .work-title { font-size: 13px; font-weight: 400; color: var(--text); }
+    .work-meta {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 0.1em;
+      color: var(--muted);
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 36px 48px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+    .footer-left {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+    }
+    .footer-right { display: flex; gap: 22px; }
+    .footer-link {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color .2s;
+    }
+    .footer-link:hover { color: var(--text); }
+
+    @media (max-width: 600px) {
+      nav { padding: 14px 20px; }
+      .nav-links { gap: 14px; }
+      .hero, .tags-section, .works-section { padding-left: 20px; padding-right: 20px; }
+      .section-header { padding: 0 20px; }
+      footer { padding: 24px 20px; }
+      .works-grid { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
+<body>
 
-
-
-<body >
-<!-- ヘッダー　-->
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-
-        <!-- ロゴ -->
-          <a id="randomness" class="navbar-brand" href="#">
-            <span class="blink1">w</span>
-            <span class="blink1">/</span>
-            <span> </span>
-            <!--<span>r</span>
-            <span>a</span>
-            <span>n</span>
-            <span>d</span>
-            <span>o</span>
-            <span>m</span>
-            <span>n</span>
-            <span>e</span>
-            <span>s</span>
-            <span>s</span>-->
-          </a>
-
-        </div>
-        <!--　facebook等へのリンク　-->
-        <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#"></a></li>
-            <li><a class="twitter-icon" href="#"></a></li>
-            <li><a class="facebook-icon" href="#"></a></li>
-            <li><a class="github-icon" href="#"></a></li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-
-
-<!--
-<div class="black_background">
-  <div id="script_musakui">w /</div>
-  <a id="scroll"><span></span>scroll</a>
-</div>
--->
-
-
-
-
-
-<!-- オープン時のランダム円描画　-->
-<!--<div id="title" class="fade_off2"><div id="random_randomness" ></div></div>-->
-<div id="random_circle" class="fade_off1"></div>
-<!--<div id="title" class="fade_off1"><div id="random_randomness" ></div></div>-->
-<div id="random_background"></div>
-
-
-<!--<div class="fade_off1"><div id="script1">abcdefgh</diV></div>
-<div class="fade_off2"><div id="script2">あいうえおかきくけこさしすせそたちつてとなにぬねの
-  あいうえおかきくけこさしすせそたちつてとなにぬねの
-  あいうえおかきくけこさしすせそたちつてとなにぬねの</diV></div>-->
-<!--
-<div class="fade_off3">
-  <div id="script4">ムサイクイとは</div>
-  <br>
-  <div id="script3">事象の発生に法則性（規則性）がなく、予測が不可能な状態。
-    古代の歴史において、偶然性とランダム性の概念は運命の概念と絡み合っていた。古代、多くの人々は運命を決定するためにサイコロを投げたが、これは後に偶然性を利用したゲームに発展した。
-    古代のほとんどの文化では、ランダム性と運命を回避するために様々な方法の占いを行っていた。
-  </diV>
-</div>
--->
-
-<!--　コンテンツリスト　-->
-<div class="memolist">
-  <ul>
-    <li>
-      <a>quantum computing</a>
-    </li>
-    <li>
-      <a>crystalization</a>
-    </li>
-    <li>
-      <a>phenomoenon</a>
-    </li>
-    <li>
-      <a>vibration</a>
-    </li>
-    <li>
-      <a>machine learning</a>
-    </li>
-    <li>
-      <a>cryptanalysis</a>
-    </li>
-    <li>
-      <a>randomness</a>
-    </li>
+<nav>
+  <a class="nav-logo" href="#">w/ randomness</a>
+  <ul class="nav-links">
+    <li><a href="#points">Points</a></li>
+    <li><a href="#motion">Motion</a></li>
+    <li><a href="#about">About</a></li>
   </ul>
-</div>
+</nav>
 
+<header class="hero">
+  <p class="hero-label">Generative Design Portfolio</p>
+  <h1 class="hero-title">
+    Order through<br><span class="accent">randomness.</span>
+  </h1>
+  <p class="hero-desc">
+    Sketches exploring how noise, probability, and emergence produce form —
+    from point distributions to oscillation and agent-based motion.
+  </p>
+</header>
 
+<section class="tags-section">
+  <p class="tags-label">Themes</p>
+  <div class="tags">
+    <span class="tag">quantum computing</span>
+    <span class="tag">crystallization</span>
+    <span class="tag">phenomenon</span>
+    <span class="tag">vibration</span>
+    <span class="tag">machine learning</span>
+    <span class="tag">cryptanalysis</span>
+    <span class="tag">randomness</span>
+  </div>
+</section>
 
-<!-- アートメモ -->
-  <section>
-    <nav class="nav2"></nav>
-    <!--<h3>01_P</h3>-->
-    <nav class="nav2">
-      <a class="sketch" href="01_P/P_1_0_01/index_2.html" title="P_1_0_01">
-      	<div class="sketch__img">
-      		<img src="01_P/P_1_0_01/P_1_0_01.png" alt="P_1_0_01" />
-      	</div>
-      	<!--<span class="btn--link">P_1_0_01</span>-->
+<!-- P SERIES -->
+<section id="points">
+  <div class="section-header">
+    <span class="section-letter">P</span>
+    <span class="section-name">Points &amp; Lines</span>
+    <div class="section-line"></div>
+  </div>
+  <div class="works-section">
+    <div class="works-grid">
+
+      <a class="work-card" href="https://oyrzknikuzus.github.io/01_P/P_1_0_01/index_2.html" target="_blank">
+        <div class="work-card-top"><span class="work-id">P_1_0_01</span><span class="work-arrow">↗</span></div>
+        <div class="work-preview" id="pp1"></div>
+        <div class="work-info">
+          <span class="work-title">Point Distribution</span>
+          <span class="work-meta">P / Static / Uniform</span>
+        </div>
       </a>
-      <a class="sketch" href="01_P/P_1_1_1_01/index.html" title="P_1_1_1_01">
-      	<div class="sketch__img">
-      		<img src="01_P/P_1_1_1_01/P_1_1_1_01.png" alt="P_1_1_1_01" />
-      	</div>
-      	<!--<span class="btn--link">P_1_1_1_01</span>-->
+
+      <a class="work-card" href="https://oyrzknikuzus.github.io/01_P/P_1_1_1_01/index.html" target="_blank">
+        <div class="work-card-top"><span class="work-id">P_1_1_1_01</span><span class="work-arrow">↗</span></div>
+        <div class="work-preview" id="pp2"></div>
+        <div class="work-info">
+          <span class="work-title">Noise Field</span>
+          <span class="work-meta">P / Noise / Perlin</span>
+        </div>
       </a>
-      <a class="sketch" href="01_P/P_1_1_2_01/index.html" title="P_1_1_2_01">
-      	<div class="sketch__img">
-      		<img src="01_P/P_1_1_2_01/P_1_1_2_01.png" alt="P_1_1_2_01" />
-      	</div>
-      	<!--<span class="btn--link">P_1_1_2_01</span>-->
+
+      <a class="work-card" href="https://oyrzknikuzus.github.io/01_P/P_1_1_2_01/index.html" target="_blank">
+        <div class="work-card-top"><span class="work-id">P_1_1_2_01</span><span class="work-arrow">↗</span></div>
+        <div class="work-preview" id="pp3"></div>
+        <div class="work-info">
+          <span class="work-title">Attractor Lines</span>
+          <span class="work-meta">P / Dynamic / Attractor</span>
+        </div>
       </a>
-      <a class="sketch" href="01_P/P_1_2_1_01/index.html" title="P_1_2_1_01">
-      	<div class="sketch__img">
-      		<img src="01_P/P_1_2_1_01/P_1_2_1_01.png" alt="P_1_2_1_01" />
-      	</div>
-      	<!--<span class="btn--link">P_1_2_1_01</span>-->
+
+      <a class="work-card" href="https://oyrzknikuzus.github.io/01_P/P_1_2_1_01/index.html" target="_blank">
+        <div class="work-card-top"><span class="work-id">P_1_2_1_01</span><span class="work-arrow">↗</span></div>
+        <div class="work-preview" id="pp4"></div>
+        <div class="work-info">
+          <span class="work-title">Grid Displacement</span>
+          <span class="work-meta">P / Grid / Line</span>
+        </div>
       </a>
-    </nav>
-    <!--<h3>02_M</h3>-->
-    <nav nav class="nav2">
-      <a class="sketch" href="02_M/M_1_1_01/index.html" title="M_1_1_01">
-      	<div class="sketch__img">
-      		<img src="02_M/M_1_1_01/M_1_1_01.png" alt="M_1_1_01" />
-      	</div>
-      	<!--<span class="btn--link">M_1_1_01</span>-->
+
+    </div>
+  </div>
+</section>
+
+<!-- M SERIES -->
+<section id="motion">
+  <div class="section-header">
+    <span class="section-letter">M</span>
+    <span class="section-name">Motion</span>
+    <div class="section-line"></div>
+  </div>
+  <div class="works-section">
+    <div class="works-grid">
+
+      <a class="work-card" href="02_M/M_1_1_01/index.html" target="_blank">
+        <div class="work-card-top"><span class="work-id">M_1_1_01</span><span class="work-arrow">↗</span></div>
+        <div class="work-preview" id="pm1"></div>
+        <div class="work-info">
+          <span class="work-title">Oscillation</span>
+          <span class="work-meta">M / Wave / Sine</span>
+        </div>
       </a>
-      <a class="sketch" href="02_M/M_1_2_01/index.html" title="M_1_2_01">
-      	<div class="sketch__img">
-      		<img src="02_M/M_1_2_01/M_1_2_01.png" alt="M_1_2_01" />
-      	</div>
-      	<!--<span class="btn--link">M_1_2_01</span>-->
+
+      <a class="work-card" href="02_M/M_1_2_01/index.html" target="_blank">
+        <div class="work-card-top"><span class="work-id">M_1_2_01</span><span class="work-arrow">↗</span></div>
+        <div class="work-preview" id="pm2"></div>
+        <div class="work-info">
+          <span class="work-title">Random Walk</span>
+          <span class="work-meta">M / Agent / Perlin</span>
+        </div>
       </a>
-      <a class="sketch" href="02_M/M_1_3_01/index.html" title="M_1_3_01">
-      	<div class="sketch__img">
-      		<img src="02_M/M_1_3_01/M_1_3_01.png" alt="M_1_3_01" />
-      	</div>
-      	<!--<span class="btn--link">M_1_3_01</span>-->
+
+      <a class="work-card" href="02_M/M_1_3_01/index.html" target="_blank">
+        <div class="work-card-top"><span class="work-id">M_1_3_01</span><span class="work-arrow">↗</span></div>
+        <div class="work-preview" id="pm3"></div>
+        <div class="work-info">
+          <span class="work-title">Agents</span>
+          <span class="work-meta">M / Agent / Force Field</span>
+        </div>
       </a>
-      <a class="sketch" href="02_M/M_1_3_02/index.html" title="M_1_3_02">
-      	<div class="sketch__img">
-      		<img src="02_M/M_1_3_02/M_1_3_02.png" alt="M_1_3_02" />
-      	</div>
-      	<!--<span class="btn--link">M_1_3_02</span>-->
+
+      <a class="work-card" href="02_M/M_1_3_02/index.html" target="_blank">
+        <div class="work-card-top"><span class="work-id">M_1_3_02</span><span class="work-arrow">↗</span></div>
+        <div class="work-preview" id="pm4"></div>
+        <div class="work-info">
+          <span class="work-title">Vortex</span>
+          <span class="work-meta">M / Agent / Vortex</span>
+        </div>
       </a>
-    </nav>
-  </section>
 
+    </div>
+  </div>
+</section>
 
+<footer id="about">
+  <span class="footer-left">w/ randomness — Generative Design Portfolio</span>
+  <div class="footer-right">
+    <a class="footer-link" href="https://github.com/oyrzknikuzus" target="_blank">GitHub</a>
+  </div>
+</footer>
 
+<!-- PREVIEW CANVASES -->
+<script>
+function draw(id, fn) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  const c = document.createElement('canvas');
+  c.width = 320; c.height = 240;
+  el.appendChild(c);
+  fn(c.getContext('2d'), 320, 240);
+}
 
+const BG = '#181a1b';
 
+// P1: uniform scatter
+draw('pp1', (ctx,w,h) => {
+  ctx.fillStyle = BG; ctx.fillRect(0,0,w,h);
+  for (let i=0; i<500; i++) {
+    const x=Math.random()*w, y=Math.random()*h;
+    const a=0.2+Math.random()*0.6;
+    ctx.beginPath(); ctx.arc(x,y,Math.random()*1.4+0.3,0,Math.PI*2);
+    ctx.fillStyle=`rgba(180,192,200,${a})`; ctx.fill();
+  }
+});
 
+// P2: Perlin-ish concentric noise
+draw('pp2', (ctx,w,h) => {
+  ctx.fillStyle = BG; ctx.fillRect(0,0,w,h);
+  for (let i=0; i<600; i++) {
+    const ang = Math.random()*Math.PI*2;
+    const r   = Math.random()*Math.min(w,h)*0.44;
+    const jit = (Math.random()-0.5)*22;
+    const x   = w/2+Math.cos(ang)*(r+jit);
+    const y   = h/2+Math.sin(ang)*(r+jit);
+    ctx.beginPath(); ctx.arc(x,y,0.9,0,Math.PI*2);
+    ctx.fillStyle=`rgba(142,180,200,${0.3+Math.random()*0.5})`; ctx.fill();
+  }
+});
 
+// P3: attractor trace
+draw('pp3', (ctx,w,h) => {
+  ctx.fillStyle = BG; ctx.fillRect(0,0,w,h);
+  ctx.strokeStyle='rgba(160,178,188,0.15)'; ctx.lineWidth=0.6;
+  let x=w/2, y=h/2;
+  for (let i=0; i<2200; i++) {
+    const nx=x+Math.cos(y*0.038)*9+(Math.random()-.5)*1.5;
+    const ny=y+Math.sin(x*0.038)*9+(Math.random()-.5)*1.5;
+    ctx.beginPath(); ctx.moveTo(x,y); ctx.lineTo(nx,ny); ctx.stroke();
+    x=nx; y=ny;
+    if(x<0||x>w||y<0||y>h){x=w/2+(Math.random()-.5)*60;y=h/2+(Math.random()-.5)*60;}
+  }
+});
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+// P4: grid + displacement
+draw('pp4', (ctx,w,h) => {
+  ctx.fillStyle = BG; ctx.fillRect(0,0,w,h);
+  const cols=14, rows=10;
+  ctx.strokeStyle='rgba(142,180,200,0.09)'; ctx.lineWidth=0.5;
+  for (let c=0; c<cols; c++) {
+    for (let r=0; r<rows; r++) {
+      const x1=(c/cols)*w+(Math.random()-.5)*16;
+      const y1=(r/rows)*h+(Math.random()-.5)*16;
+      const x2=((c+1)/cols)*w+(Math.random()-.5)*16;
+      const y2=((r+1)/rows)*h+(Math.random()-.5)*16;
+      ctx.beginPath(); ctx.moveTo(x1,y1); ctx.lineTo(x2,y2); ctx.stroke();
+    }
+  }
+  for (let c=0; c<=cols; c++) for (let r=0; r<=rows; r++) {
+    ctx.beginPath();
+    ctx.arc((c/cols)*w+(Math.random()-.5)*14, (r/rows)*h+(Math.random()-.5)*14,
+            1.1, 0, Math.PI*2);
+    ctx.fillStyle=`rgba(142,180,200,${0.25+Math.random()*0.45})`; ctx.fill();
+  }
+});
 
+// M1: sine wave layers
+draw('pm1', (ctx,w,h) => {
+  ctx.fillStyle = BG; ctx.fillRect(0,0,w,h);
+  for (let i=0; i<5; i++) {
+    const freq=1+i*0.65, amp=(h*0.36)*(1-i*0.1), phase=i*0.9;
+    const alpha=0.12+0.2*(1-i/5), grey=180-i*20;
+    ctx.strokeStyle=`rgba(${grey},${grey},${grey},${alpha})`;
+    ctx.lineWidth=1-i*0.1; ctx.beginPath();
+    for (let x=0; x<=w; x+=2) {
+      const y=h/2+Math.sin((x/w)*Math.PI*2*freq*2+phase)*amp
+              +Math.sin((x/w)*Math.PI*2*freq*3.2+phase*0.6)*amp*0.25;
+      x===0?ctx.moveTo(x,y):ctx.lineTo(x,y);
+    }
+    ctx.stroke();
+  }
+});
 
+// M2: random walk trails
+draw('pm2', (ctx,w,h) => {
+  ctx.fillStyle = BG; ctx.fillRect(0,0,w,h);
+  for (let j=0; j<12; j++) {
+    let x=Math.random()*w, y=Math.random()*h;
+    const grey=80+Math.floor(Math.random()*120);
+    ctx.strokeStyle=`rgba(${grey},${grey},${grey},0.22)`; ctx.lineWidth=0.5; ctx.beginPath(); ctx.moveTo(x,y);
+    for (let i=0; i<400; i++) {
+      const ang=(Math.sin(x*0.04)*Math.cos(y*0.04)+Math.random()-.5)*0.5;
+      x+=Math.cos(ang)*3; y+=Math.sin(ang)*3;
+      x=Math.max(0,Math.min(w,x)); y=Math.max(0,Math.min(h,y));
+      ctx.lineTo(x,y);
+    }
+    ctx.stroke();
+  }
+});
 
+// M3: agent force field
+draw('pm3', (ctx,w,h) => {
+  ctx.fillStyle = BG; ctx.fillRect(0,0,w,h);
+  for (let j=0; j<18; j++) {
+    let x=Math.random()*w, y=Math.random()*h;
+    const grey=90+Math.floor(Math.random()*100);
+    ctx.strokeStyle=`rgba(${grey},${grey},${grey},0.18)`; ctx.lineWidth=0.4; ctx.beginPath(); ctx.moveTo(x,y);
+    for (let i=0; i<300; i++) {
+      const nx=x*0.006, ny=y*0.006;
+      const ang=Math.sin(nx)*Math.cos(ny)*Math.PI*3;
+      x+=Math.cos(ang)*2.5; y+=Math.sin(ang)*2.5;
+      if(x<0)x=w; if(x>w)x=0; if(y<0)y=h; if(y>h)y=0;
+      ctx.lineTo(x,y);
+    }
+    ctx.stroke();
+  }
+});
+
+// M4: vortex
+draw('pm4', (ctx,w,h) => {
+  ctx.fillStyle = BG; ctx.fillRect(0,0,w,h);
+  const centers=[{x:w*.38,y:h*.45,s:1.4},{x:w*.65,y:h*.55,s:-1.1}];
+  for (let j=0; j<16; j++) {
+    let x=Math.random()*w, y=Math.random()*h;
+    const grey=85+Math.floor(Math.random()*110);
+    ctx.strokeStyle=`rgba(${grey},${grey},${grey},0.2)`; ctx.lineWidth=0.45; ctx.beginPath(); ctx.moveTo(x,y);
+    for (let i=0; i<350; i++) {
+      let fx=0, fy=0;
+      for (const c of centers) {
+        const dx=x-c.x, dy=y-c.y, d=Math.sqrt(dx*dx+dy*dy);
+        if (d<180 && d>1) { fx+=(-dy/d)*c.s*(1-d/180); fy+=(dx/d)*c.s*(1-d/180); }
+      }
+      x+=fx*2.2+(Math.random()-.5)*0.5; y+=fy*2.2+(Math.random()-.5)*0.5;
+      if(x<0)x=w; if(x>w)x=0; if(y<0)y=h; if(y>h)y=0;
+      ctx.lineTo(x,y);
+    }
+    ctx.stroke();
+  }
+});
+</script>
 </body>
-
-
 </html>
