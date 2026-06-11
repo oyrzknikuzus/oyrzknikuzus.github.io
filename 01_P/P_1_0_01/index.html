@@ -16,7 +16,7 @@
     -webkit-user-select: none;
     user-select: none;
   }
-  canvas { display: block; touch-action: none; }
+  canvas { display: block; touch-action: none; position: relative; z-index: 1; }
 
   #back {
     position: fixed; top: 20px; left: 24px;
@@ -78,8 +78,8 @@ new p5(function(p) {
   };
 
   p.draw = function() {
-    // ゆっくりフェードして軌跡を残す
-    p.fill(14, 14, 14, 10);
+    // 軌跡をゆっくりフェード（薄めにして長く残す）
+    p.fill(14, 14, 14, 4);
     p.rect(0, 0, p.width, p.height);
 
     if (p.touches.length > 0 || p.mouseIsPressed) {
@@ -94,15 +94,15 @@ new p5(function(p) {
         // 横位置 → 色相 / 縦位置 → 広がりとサイズ
         const hue   = p.map(x, 0, p.width, 180, 320);
         const spread = p.map(y, 0, p.height, 4, 80);
-        const size   = p.map(y, 0, p.height, 0.6, 4.5);
+        const size   = p.map(y, 0, p.height, 1.2, 7);
 
-        for (let i = 0; i < 6; i++) {
+        for (let i = 0; i < 8; i++) {
           const ang = p.random(p.TWO_PI);
           const r   = p.random(spread);
           const px  = x + p.cos(ang) * r;
           const py  = y + p.sin(ang) * r;
           p.colorMode(p.HSB, 360, 100, 100, 100);
-          p.fill(hue + p.random(-12, 12), 55, 95, p.random(20, 55));
+          p.fill(hue + p.random(-12, 12), 70, 100, p.random(60, 100));
           p.ellipse(px, py, size, size);
           p.colorMode(p.RGB, 255);
         }
@@ -111,7 +111,13 @@ new p5(function(p) {
   };
 
   // ── タッチ・スクロール対策 ──────────────────
-  p.touchStarted = function() {
+  // #back ボタンの上では p5 のデフォルト抑制を行わず、リンクを機能させる
+  function isOnBack(event) {
+    return event && event.target && event.target.closest && event.target.closest('#back');
+  }
+
+  p.touchStarted = function(event) {
+    if (isOnBack(event)) return true; // back ボタンは通常通り動作させる
     if (!touched) {
       touched = true;
       hintEl.classList.add('hidden');
@@ -119,7 +125,8 @@ new p5(function(p) {
     return false; // ページのスクロール / ズームを防止
   };
 
-  p.touchMoved = function() {
+  p.touchMoved = function(event) {
+    if (isOnBack(event)) return true;
     return false; // 縦方向のスクロールを防止し、描画のみ反映
   };
 
@@ -137,9 +144,12 @@ new p5(function(p) {
 });
 
 // iOS Safari等で body 自体のスクロール・バウンスを防止
+// （ただし #back ボタン上のタッチは通常通り処理させる）
 document.addEventListener('touchmove', function(e) {
+  if (e.target.closest && e.target.closest('#back')) return;
   e.preventDefault();
 }, { passive: false });
+
 </script>
 </body>
 </html>
