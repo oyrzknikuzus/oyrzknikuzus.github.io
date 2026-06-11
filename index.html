@@ -280,42 +280,24 @@
     <div class="works-section">
       <div class="works-grid">
 
-        <a class="work-card" href="https://oyrzknikuzus.github.io/01_P/P_1_0_01/index_2.html" target="_blank">
+        <a class="work-card" href="01_P/P_1_0_01/index.html" target="_blank">
           <div class="work-card-top"><span class="work-id">P_1_0_01</span><span class="work-arrow">↗</span></div>
           <div class="work-preview" id="pp1"></div>
           <div class="work-info">
-            <span class="work-title">Point Distribution</span>
-            <span class="work-meta">P / Static / Uniform</span>
+            <span class="work-title">Touch Points</span>
+            <span class="work-meta">P / Interactive / Touch</span>
           </div>
         </a>
 
-        <a class="work-card" href="https://oyrzknikuzus.github.io/01_P/P_1_1_1_01/index.html" target="_blank">
+        <a class="work-card" href="01_P/P_1_1_1_01/index.html" target="_blank">
           <div class="work-card-top"><span class="work-id">P_1_1_1_01</span><span class="work-arrow">↗</span></div>
           <div class="work-preview" id="pp2"></div>
           <div class="work-info">
-            <span class="work-title">Noise Field</span>
-            <span class="work-meta">P / Noise / Perlin</span>
+            <span class="work-title">Falling Type</span>
+            <span class="work-meta">P / Interactive / Keyboard</span>
           </div>
         </a>
-        <!-- 
-        <a class="work-card" href="https://oyrzknikuzus.github.io/01_P/P_1_1_2_01/index.html" target="_blank">
-          <div class="work-card-top"><span class="work-id">P_1_1_2_01</span><span class="work-arrow">↗</span></div>
-          <div class="work-preview" id="pp3"></div>
-          <div class="work-info">
-            <span class="work-title">Attractor Lines</span>
-            <span class="work-meta">P / Dynamic / Attractor</span>
-          </div>
-        </a>
-        
-        <a class="work-card" href="https://oyrzknikuzus.github.io/01_P/P_1_2_1_01/index.html" target="_blank">
-          <div class="work-card-top"><span class="work-id">P_1_2_1_01</span><span class="work-arrow">↗</span></div>
-          <div class="work-preview" id="pp4"></div>
-          <div class="work-info">
-            <span class="work-title">Grid Displacement</span>
-            <span class="work-meta">P / Grid / Line</span>
-          </div>
-        </a>
-        -->
+
       </div>
     </div>
   </section>
@@ -779,50 +761,30 @@ const BG = '#181a1b';
 
 draw('pp1', (ctx,w,h) => {
   ctx.fillStyle=BG; ctx.fillRect(0,0,w,h);
-  for(let i=0;i<500;i++){
-    const x=Math.random()*w,y=Math.random()*h,a=0.2+Math.random()*0.6;
-    ctx.beginPath();ctx.arc(x,y,Math.random()*1.4+0.3,0,Math.PI*2);
-    ctx.fillStyle=`rgba(180,192,200,${a})`;ctx.fill();
+  // touch-trail style cluster
+  for(let c=0;c<6;c++){
+    const cx=Math.random()*w, cy=Math.random()*h;
+    const hue=140+Math.random()*140;
+    for(let i=0;i<60;i++){
+      const ang=Math.random()*Math.PI*2, r=Math.random()*40;
+      const x=cx+Math.cos(ang)*r, y=cy+Math.sin(ang)*r;
+      ctx.beginPath();ctx.arc(x,y,Math.random()*1.6+0.4,0,Math.PI*2);
+      ctx.fillStyle=`hsla(${hue},55%,70%,${0.15+Math.random()*0.35})`;ctx.fill();
+    }
   }
 });
 
 draw('pp2', (ctx,w,h) => {
   ctx.fillStyle=BG;ctx.fillRect(0,0,w,h);
-  for(let i=0;i<600;i++){
-    const ang=Math.random()*Math.PI*2,r=Math.random()*Math.min(w,h)*0.44;
-    const jit=(Math.random()-0.5)*22;
-    const x=w/2+Math.cos(ang)*(r+jit),y=h/2+Math.sin(ang)*(r+jit);
-    ctx.beginPath();ctx.arc(x,y,0.9,0,Math.PI*2);
-    ctx.fillStyle=`rgba(142,180,200,${0.3+Math.random()*0.5})`;ctx.fill();
-  }
-});
-
-draw('pp3', (ctx,w,h) => {
-  ctx.fillStyle=BG;ctx.fillRect(0,0,w,h);
-  ctx.strokeStyle='rgba(160,178,188,0.15)';ctx.lineWidth=0.6;
-  let x=w/2,y=h/2;
-  for(let i=0;i<2200;i++){
-    const nx=x+Math.cos(y*0.038)*9+(Math.random()-.5)*1.5;
-    const ny=y+Math.sin(x*0.038)*9+(Math.random()-.5)*1.5;
-    ctx.beginPath();ctx.moveTo(x,y);ctx.lineTo(nx,ny);ctx.stroke();
-    x=nx;y=ny;
-    if(x<0||x>w||y<0||y>h){x=w/2+(Math.random()-.5)*60;y=h/2+(Math.random()-.5)*60;}
-  }
-});
-
-draw('pp4', (ctx,w,h) => {
-  ctx.fillStyle=BG;ctx.fillRect(0,0,w,h);
-  const cols=14,rows=10;
-  ctx.strokeStyle='rgba(142,180,200,0.09)';ctx.lineWidth=0.5;
-  for(let c=0;c<cols;c++) for(let r=0;r<rows;r++){
-    const x1=(c/cols)*w+(Math.random()-.5)*16,y1=(r/rows)*h+(Math.random()-.5)*16;
-    const x2=((c+1)/cols)*w+(Math.random()-.5)*16,y2=((r+1)/rows)*h+(Math.random()-.5)*16;
-    ctx.beginPath();ctx.moveTo(x1,y1);ctx.lineTo(x2,y2);ctx.stroke();
-  }
-  for(let c=0;c<=cols;c++) for(let r=0;r<=rows;r++){
-    ctx.beginPath();
-    ctx.arc((c/cols)*w+(Math.random()-.5)*14,(r/rows)*h+(Math.random()-.5)*14,1.1,0,Math.PI*2);
-    ctx.fillStyle=`rgba(142,180,200,${0.25+Math.random()*0.45})`;ctx.fill();
+  // falling characters style
+  const chars='aA1#@*+%';
+  ctx.textAlign='center'; ctx.textBaseline='middle';
+  for(let i=0;i<14;i++){
+    const x=Math.random()*w, y=Math.random()*h*0.85+10;
+    const size=10+Math.random()*22;
+    ctx.font=`${size}px 'Space Mono', monospace`;
+    ctx.fillStyle=`rgba(142,180,200,${0.25+Math.random()*0.45})`;
+    ctx.fillText(chars[Math.floor(Math.random()*chars.length)], x, y);
   }
 });
 
