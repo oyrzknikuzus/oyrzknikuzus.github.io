@@ -257,6 +257,7 @@
   <ul class="nav-links">
     <li><a href="#points">Points</a></li>
     <li><a href="#motion">Motion</a></li>
+    <li><a href="#nature">Nature</a></li>
     <li><a href="#about">About</a></li>
   </ul>
 </nav>
@@ -345,6 +346,29 @@
           <div class="work-info">
             <span class="work-title">Vortex</span>
             <span class="work-meta">M / Agent / Vortex</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- N SERIES -->
+  <section id="nature">
+    <div class="section-header">
+      <span class="section-letter">N</span>
+      <span class="section-name">Nature</span>
+      <div class="section-line"></div>
+    </div>
+    <div class="works-section">
+      <div class="works-grid">
+
+        <a class="work-card" href="03_N/N_1_0_01/index.html" target="_blank">
+          <div class="work-card-top"><span class="work-id">N_1_0_01</span><!--<span class="work-arrow">↗</span>--></div>
+          <div class="work-preview" id="pn1"></div>
+          <div class="work-info">
+            <span class="work-title">Wind &amp; Water</span>
+            <span class="work-meta">N / Interactive / Field</span>
           </div>
         </a>
 
@@ -853,6 +877,31 @@ draw('pm4', (ctx,w,h) => {
       ctx.lineTo(x,y);
     }
     ctx.stroke();
+  }
+});
+
+// N1: nature scene preview (sky gradient + grass + sun)
+draw('pn1', (ctx,w,h) => {
+  // sky gradient
+  const grad = ctx.createLinearGradient(0,0,0,h*0.7);
+  grad.addColorStop(0, '#3a5a8c');
+  grad.addColorStop(1, '#e0a96d');
+  ctx.fillStyle = grad; ctx.fillRect(0,0,w,h*0.7);
+  // sun
+  ctx.beginPath(); ctx.arc(w*0.7, h*0.32, 14, 0, Math.PI*2);
+  ctx.fillStyle = 'rgba(255,224,150,0.9)'; ctx.fill();
+  // mountains
+  ctx.fillStyle = 'rgba(90,70,60,0.5)';
+  ctx.beginPath(); ctx.moveTo(0,h*0.55);
+  for(let x=0;x<=w;x+=w/10) ctx.lineTo(x, h*0.55 - Math.sin(x*0.05)*14 - 10);
+  ctx.lineTo(w,h*0.7); ctx.lineTo(0,h*0.7); ctx.closePath(); ctx.fill();
+  // ground / grass
+  ctx.fillStyle = '#2f4d33'; ctx.fillRect(0,h*0.7,w,h*0.3);
+  ctx.strokeStyle = 'rgba(140,200,120,0.5)'; ctx.lineWidth=1;
+  for(let i=0;i<60;i++){
+    const x=Math.random()*w, y=h*0.7+Math.random()*h*0.28;
+    const lean=(Math.random()-0.5)*8;
+    ctx.beginPath(); ctx.moveTo(x,y); ctx.lineTo(x+lean,y-10-Math.random()*8); ctx.stroke();
   }
 });
 </script>
