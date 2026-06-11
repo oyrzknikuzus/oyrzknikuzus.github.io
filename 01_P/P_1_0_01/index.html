@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover"/>
+<title>P_1_0_01 — Touch Points</title>
+<style>
+  html, body {
+    margin: 0; padding: 0;
+    width: 100%; height: 100%;
+    overflow: hidden;
+    position: fixed;
+    background: #0e0e0e;
+    overscroll-behavior: none;
+    touch-action: none;       /* 縦方向のスクロールを無効化 */
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  canvas { display: block; touch-action: none; }
+
+  #back {
+    position: fixed; top: 20px; left: 24px;
+    color: #444; font-size: 10px; letter-spacing: .15em;
+    text-decoration: none; text-transform: uppercase;
+    font-family: 'Space Mono', monospace;
+    z-index: 10;
+  }
+  #back:hover { color: #aaa; }
+
+  #info {
+    position: fixed; top: 20px; right: 24px;
+    color: #333; font-size: 10px; letter-spacing: .12em;
+    text-align: right; line-height: 1.8;
+    font-family: 'Space Mono', monospace;
+    z-index: 10;
+  }
+
+  /* "touch the screen" overlay */
+  #hint {
+    position: fixed; inset: 0;
+    display: flex; align-items: center; justify-content: center;
+    pointer-events: none;
+    z-index: 20;
+    transition: opacity 0.6s ease;
+  }
+  #hint span {
+    font-family: 'Space Mono', monospace;
+    font-size: clamp(14px, 4vw, 22px);
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: rgba(220,224,228,0.55);
+    animation: pulse 2.4s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 0.35; }
+    50%      { opacity: 0.9; }
+  }
+  #hint.hidden { opacity: 0; }
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+</head>
+<body>
+<a id="back" href="../../index.html">← back</a>
+<div id="info">P_1_0_01<br>Touch Points</div>
+<div id="hint"><span>touch the screen</span></div>
+
+<script>
+new p5(function(p) {
+  let hintEl;
+  let touched = false;
+
+  p.setup = function() {
+    const cnv = p.createCanvas(window.innerWidth, window.innerHeight);
+    cnv.style('display', 'block');
+    p.background(14, 14, 14);
+    p.noStroke();
+    hintEl = document.getElementById('hint');
+  };
+
+  p.draw = function() {
+    // ゆっくりフェードして軌跡を残す
+    p.fill(14, 14, 14, 10);
+    p.rect(0, 0, p.width, p.height);
+
+    if (p.touches.length > 0 || p.mouseIsPressed) {
+      // 全てのタッチポイントに対して描画
+      const points = p.touches.length > 0
+        ? p.touches
+        : [{ x: p.mouseX, y: p.mouseY }];
+
+      for (const pt of points) {
+        const x = pt.x, y = pt.y;
+
+        // 横位置 → 色相 / 縦位置 → 広がりとサイズ
+        const hue   = p.map(x, 0, p.width, 180, 320);
+        const spread = p.map(y, 0, p.height, 4, 80);
+        const size   = p.map(y, 0, p.height, 0.6, 4.5);
+
+        for (let i = 0; i < 6; i++) {
+          const ang = p.random(p.TWO_PI);
+          const r   = p.random(spread);
+          const px  = x + p.cos(ang) * r;
+          const py  = y + p.sin(ang) * r;
+          p.colorMode(p.HSB, 360, 100, 100, 100);
+          p.fill(hue + p.random(-12, 12), 55, 95, p.random(20, 55));
+          p.ellipse(px, py, size, size);
+          p.colorMode(p.RGB, 255);
+        }
+      }
+    }
+  };
+
+  // ── タッチ・スクロール対策 ──────────────────
+  p.touchStarted = function() {
+    if (!touched) {
+      touched = true;
+      hintEl.classList.add('hidden');
+    }
+    return false; // ページのスクロール / ズームを防止
+  };
+
+  p.touchMoved = function() {
+    return false; // 縦方向のスクロールを防止し、描画のみ反映
+  };
+
+  p.mousePressed = function() {
+    if (!touched) {
+      touched = true;
+      hintEl.classList.add('hidden');
+    }
+  };
+
+  p.windowResized = function() {
+    p.resizeCanvas(window.innerWidth, window.innerHeight);
+    p.background(14, 14, 14);
+  };
+});
+
+// iOS Safari等で body 自体のスクロール・バウンスを防止
+document.addEventListener('touchmove', function(e) {
+  e.preventDefault();
+}, { passive: false });
+</script>
+</body>
+</html>
