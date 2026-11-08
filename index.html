@@ -160,8 +160,9 @@
       display: flex;
       flex-direction: column;
       gap: 14px;
-      transition: background .2s;
+      transition: background .2s, transform .2s;
       position: relative;
+      cursor: pointer;
       overflow: hidden;
       backdrop-filter: blur(6px);
     }
@@ -173,8 +174,11 @@
       transition: border-color .2s;
       pointer-events: none;
     }
-    .work-card:hover { background: rgba(24,26,27,0.92); }
+    .work-card:hover { background: rgba(24,26,27,0.92); transform: translateY(-3px); }
     .work-card:hover::after { border-color: var(--accent); }
+    .work-card:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+    .work-card:hover .work-title,
+    .work-card:focus-visible .work-title { color: var(--accent); }
 
     .work-card-top { display: flex; justify-content: space-between; align-items: flex-start; }
     .work-id {
@@ -201,6 +205,16 @@
 
     .work-info { display: flex; flex-direction: column; gap: 5px; }
     .work-title { font-size: 13px; font-weight: 400; color: var(--text); }
+    .work-cta {
+      margin-top: 8px;
+      font-family: var(--font-mono);
+      font-size: 9px;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+      transition: color .2s;
+    }
+    .work-card:hover .work-cta,
+    .work-card:focus-visible .work-cta { color: var(--accent); }
     .work-meta {
       font-family: var(--font-mono);
       font-size: 10px;
@@ -282,20 +296,22 @@
       <div class="works-grid">
 
         <a class="work-card" href="01_P/P_1_0_01/index.html" target="_blank">
-          <div class="work-card-top"><span class="work-id">P_1_0_01</span><!--<span class="work-arrow">↗</span>--></div>
+          <div class="work-card-top"><span class="work-id">P_1_0_01</span><span class="work-arrow">↗</span></div>
           <div class="work-preview" id="pp1"></div>
           <div class="work-info">
             <span class="work-title">Touch Points</span>
             <span class="work-meta">P / Interactive / Touch</span>
+            <span class="work-cta">OPEN ↗</span>
           </div>
         </a>
 
         <a class="work-card" href="01_P/P_1_1_1_01/index.html" target="_blank">
-          <div class="work-card-top"><span class="work-id">P_1_1_1_01</span><!--<span class="work-arrow">↗</span>--></div>
+          <div class="work-card-top"><span class="work-id">P_1_1_1_01</span><span class="work-arrow">↗</span></div>
           <div class="work-preview" id="pp2"></div>
           <div class="work-info">
             <span class="work-title">Falling Type</span>
             <span class="work-meta">P / Interactive / Keyboard</span>
+            <span class="work-cta">OPEN ↗</span>
           </div>
         </a>
 
@@ -314,38 +330,42 @@
       <div class="works-grid">
 
         <a class="work-card" href="02_M/M_1_1_01/index.html" target="_blank">
-          <div class="work-card-top"><span class="work-id">M_1_1_01</span><!--<span class="work-arrow">↗</span>--></div>
+          <div class="work-card-top"><span class="work-id">M_1_1_01</span><span class="work-arrow">↗</span></div>
           <div class="work-preview" id="pm1"></div>
           <div class="work-info">
             <span class="work-title">Oscillation</span>
             <span class="work-meta">M / Wave / Sine</span>
+            <span class="work-cta">OPEN ↗</span>
           </div>
         </a>
 
         <a class="work-card" href="02_M/M_1_2_01/index.html" target="_blank">
-          <div class="work-card-top"><span class="work-id">M_1_2_01</span><!--<span class="work-arrow">↗</span>--></div>
+          <div class="work-card-top"><span class="work-id">M_1_2_01</span><span class="work-arrow">↗</span></div>
           <div class="work-preview" id="pm2"></div>
           <div class="work-info">
             <span class="work-title">Random Walk</span>
             <span class="work-meta">M / Agent / Perlin</span>
+            <span class="work-cta">OPEN ↗</span>
           </div>
         </a>
 
         <a class="work-card" href="02_M/M_1_3_01/index.html" target="_blank">
-          <div class="work-card-top"><span class="work-id">M_1_3_01</span><!--<span class="work-arrow">↗</span>--></div>
+          <div class="work-card-top"><span class="work-id">M_1_3_01</span><span class="work-arrow">↗</span></div>
           <div class="work-preview" id="pm3"></div>
           <div class="work-info">
             <span class="work-title">Agents</span>
             <span class="work-meta">M / Agent / Force Field</span>
+            <span class="work-cta">OPEN ↗</span>
           </div>
         </a>
 
         <a class="work-card" href="02_M/M_1_3_02/index.html" target="_blank">
-          <div class="work-card-top"><span class="work-id">M_1_3_02</span><!--<span class="work-arrow">↗</span>--></div>
+          <div class="work-card-top"><span class="work-id">M_1_3_02</span><span class="work-arrow">↗</span></div>
           <div class="work-preview" id="pm4"></div>
           <div class="work-info">
             <span class="work-title">Vortex</span>
             <span class="work-meta">M / Agent / Vortex</span>
+            <span class="work-cta">OPEN ↗</span>
           </div>
         </a>
 
@@ -364,11 +384,12 @@
       <div class="works-grid">
 
         <a class="work-card" href="03_N/N_1_0_01/index.html" target="_blank">
-          <div class="work-card-top"><span class="work-id">N_1_0_01</span><!--<span class="work-arrow">↗</span>--></div>
+          <div class="work-card-top"><span class="work-id">N_1_0_01</span><span class="work-arrow">↗</span></div>
           <div class="work-preview" id="pn1"></div>
           <div class="work-info">
             <span class="work-title">Wind &amp; Water</span>
             <span class="work-meta">N / Interactive / Field</span>
+            <span class="work-cta">OPEN ↗</span>
           </div>
         </a>
 
